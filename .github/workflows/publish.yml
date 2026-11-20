@@ -1,0 +1,23 @@
+name: publish-at-7-30
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "52 13 * * *"   # 19:22 IST: publish the newest draft release (Zapier then posts it)
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish newest draft
+        run: |
+          TAG=$(gh release list --limit 20 --json tagName,isDraft --jq '[.[] | select(.isDraft)][0].tagName')
+          if [ -z "$TAG" ]; then echo "no draft to publish"; exit 0; fi
+          gh release edit "$TAG" --draft=false --latest
+          echo "published $TAG"

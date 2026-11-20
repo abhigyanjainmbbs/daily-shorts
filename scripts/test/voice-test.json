@@ -1,0 +1,5 @@
+{"id": "voice-test", "palette": "ocean", "title": "voice test",
+ "scenes": [
+  {"vo": "[curious] क्या आपको पता है... आपका दिल रोज़ लगभग एक लाख बार धड़कता है?", "cap": "test", "visual": {"type": "title", "title": "test"}},
+  {"vo": "और ये बात... सच में कमाल है।", "cap": "test", "visual": {"type": "title", "title": "test"}}
+ ]}

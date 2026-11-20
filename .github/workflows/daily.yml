@@ -1,0 +1,66 @@
+name: daily-short
+
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: "Script path (blank = next in queue)"
+        required: false
+        default: ""
+      voice_only:
+        description: "Only generate the voice files"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "41 11 * * *"   # 17:11 IST: voice + render the next queued script (draft release)
+  push:
+    paths:
+      - "triggers/run.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-short
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: |
+          which ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+          pip install pillow numpy scipy soundfile
+      - name: Voice + render
+        run: |
+          ARGS="${{ github.event.inputs.script }}"
+          if [ "${{ github.event.inputs.voice_only }}" = "true" ]; then ARGS="$ARGS --voice-only"; fi
+          if [ "${{ github.event_name }}" = "push" ] && [ -f triggers/run.json ]; then
+            ARGS=$(python -c "import json;d=json.load(open('triggers/run.json'));print(d.get('script','') + (' --voice-only' if d.get('voice_only') else ''))")
+          fi
+          mkdir -p logs
+          set -o pipefail
+          python engine/pipeline.py $ARGS 2>&1 | tee logs/last_run.txt
+      - name: Save voice + notes + log
+        if: always()
+        run: |
+          git config user.name "daily-shorts-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add voice notes logs || true
+          git diff --cached --quiet || (git commit -m "voice/notes for $(cat out/id.txt 2>/dev/null || echo run)" && git push)
+      - name: Draft release with the video
+        if: hashFiles('out/release.md') != ''
+        run: |
+          ID=$(cat out/id.txt)
+          gh release delete "$ID" --yes --cleanup-tag 2>/dev/null || true
+          gh release create "$ID" "out/$ID.mp4#video.mp4" "out/$ID.jpg#thumbnail.jpg" \
+            --draft --title "$(cat out/release_title.txt)" --notes-file out/release.md
