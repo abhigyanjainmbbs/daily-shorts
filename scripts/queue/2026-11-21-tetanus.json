@@ -41,6 +41,93 @@
    ],
    "bg": "amber",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "courtyard",
+     "blur": 5,
+     "zoom": [
+      1.0,
+      1.08
+     ],
+     "dark": 0.05
+    },
+    "layers": [
+     {
+      "img": "nail_up_cut",
+      "w": 150,
+      "x": 540,
+      "y": 1290,
+      "keys": [
+       {
+        "t": 0,
+        "y": 1900
+       },
+       {
+        "t": 0.1,
+        "y": 1290,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "foot_cut",
+      "w": 820,
+      "x": 600,
+      "y": 960,
+      "keys": [
+       {
+        "t": 0,
+        "y": -700
+       },
+       {
+        "t": 0.28,
+        "y": -700
+       },
+       {
+        "t": 0.38,
+        "y": 960,
+        "e": "in"
+       },
+       {
+        "t": 0.62,
+        "y": 960
+       },
+       {
+        "t": 0.75,
+        "y": -700,
+        "e": "in"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "shake",
+      "t": 0.38,
+      "d": 0.45,
+      "amp": 18
+     },
+     {
+      "type": "flash",
+      "t": 0.38,
+      "d": 0.25,
+      "col": [
+       255,
+       40,
+       30
+      ]
+     },
+     {
+      "type": "blood",
+      "x": 548,
+      "y": 1150,
+      "t": 0.7,
+      "r": 22,
+      "drip": 70
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "nail",
     "rust": true
    }
@@ -63,13 +150,55 @@
    ],
    "bg": "teal",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "courtyard",
+     "blur": 12,
+     "zoom": [
+      1.08,
+      1.14
+     ],
+     "dark": 0.15
+    },
+    "layers": [
+     {
+      "img": "hand_nail_cut",
+      "w": 860,
+      "x": 620,
+      "y": 980,
+      "keys": [
+       {
+        "t": 0,
+        "x": 1700
+       },
+       {
+        "t": 0.15,
+        "x": 620,
+        "e": "out"
+       }
+      ],
+      "bob": 6
+     }
+    ],
+    "fx": [
+     {
+      "type": "flakes",
+      "x": 430,
+      "y": 1150,
+      "t": 0.55,
+      "n": 34,
+      "spread": 120
+     }
+    ]
+   },
+   "sfx": "stinger",
+   "visual_fallback": {
     "type": "nail",
     "rust": true,
     "flakes": true,
     "stamp": "NOT GUILTY",
     "stamp_at": 0.6
-   },
-   "sfx": "stinger"
+   }
   },
   {
    "vo": "असली मुजरिम मिट्टी में छुपा है — क्लॉस्ट्रिडियम टेटनाई।",
@@ -83,6 +212,53 @@
    ],
    "bg": "soil",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "soil_day",
+     "zoom": [
+      1.0,
+      1.3
+     ],
+     "pan": [
+      0,
+      160
+     ]
+    },
+    "layers": [
+     {
+      "img": "bacterium_cut",
+      "w": 330,
+      "x": 540,
+      "y": 1180,
+      "rot": -12,
+      "wiggle": 6,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.4
+       },
+       {
+        "t": 0.45,
+        "alpha": 0,
+        "scale": 0.4
+       },
+       {
+        "t": 0.65,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "soil",
     "count": 7
    }
@@ -100,6 +276,214 @@
    "bg": "amber",
    "source": "CDC Pink Book · Ch. 21",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "soil_day",
+     "zoom": [
+      1.3,
+      1.36
+     ],
+     "pan": [
+      0,
+      160
+     ]
+    },
+    "layers": [
+     {
+      "img": "bacterium_cut",
+      "w": 200,
+      "x": 300,
+      "y": 1000,
+      "rot": 20,
+      "wiggle": 7,
+      "wspeed": 3,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.0,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.15,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "bacterium_cut",
+      "w": 200,
+      "x": 760,
+      "y": 950,
+      "rot": -30,
+      "wiggle": 7,
+      "wspeed": 4,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.08,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.22999999999999998,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "bacterium_cut",
+      "w": 200,
+      "x": 520,
+      "y": 1250,
+      "rot": 5,
+      "wiggle": 7,
+      "wspeed": 5,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.16,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.31,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "bacterium_cut",
+      "w": 200,
+      "x": 250,
+      "y": 1400,
+      "rot": -15,
+      "wiggle": 7,
+      "wspeed": 6,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.24,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.39,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "bacterium_cut",
+      "w": 200,
+      "x": 820,
+      "y": 1350,
+      "rot": 35,
+      "wiggle": 7,
+      "wspeed": 7,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.32,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.47,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "bacterium_cut",
+      "w": 200,
+      "x": 560,
+      "y": 820,
+      "rot": 60,
+      "wiggle": 7,
+      "wspeed": 8,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.4,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.55,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "soil",
     "count": 12
    }
@@ -123,6 +507,49 @@
    "bg": "violet",
    "source": "Ananthanarayan & Paniker",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "microscope",
+     "zoom": [
+      1.0,
+      1.18
+     ]
+    },
+    "layers": [
+     {
+      "img": "bacterium_cut",
+      "w": 560,
+      "x": 540,
+      "y": 1330,
+      "rot": -10,
+      "wiggle": 3,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "y": 1500
+       },
+       {
+        "t": 0.55,
+        "alpha": 0,
+        "y": 1500
+       },
+       {
+        "t": 0.7,
+        "alpha": 1,
+        "y": 1330,
+        "e": "back"
+       }
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "drumstick",
     "label": "Gram-positive · terminal spore"
    }
@@ -152,6 +579,113 @@
    "bg": "crimson",
    "source": "CDC Pink Book",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "soil_day",
+     "seq": [
+      [
+       "soil_day",
+       0
+      ],
+      [
+       "soil_storm",
+       0.22
+      ],
+      [
+       "autoclave",
+       0.5
+      ]
+     ],
+     "zoom": [
+      1.05,
+      1.15
+     ],
+     "xfade": 0.7
+    },
+    "layers": [
+     {
+      "img": "spore_cut",
+      "w": 250,
+      "x": 540,
+      "y": 1120,
+      "bob": 8,
+      "glow": [
+       255,
+       236,
+       190
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.4
+       },
+       {
+        "t": 0.08,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       },
+       {
+        "t": 0.5,
+        "y": 1120,
+        "scale": 1
+       },
+       {
+        "t": 0.6,
+        "y": 1000,
+        "scale": 1.3
+       }
+      ]
+     },
+     {
+      "text": "121°C",
+      "font": "osw",
+      "size": 150,
+      "col": [
+       255,
+       150,
+       60
+      ],
+      "glow": [
+       255,
+       120,
+       40
+      ],
+      "x": 540,
+      "y": 1420,
+      "stroke": 4,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.6,
+        "alpha": 0,
+        "scale": 1.6
+       },
+       {
+        "t": 0.66,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "steam",
+      "x": 540,
+      "y": 1250,
+      "w": 420,
+      "t": 0.5,
+      "a": 0.6
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "spore",
     "mode": "boil"
    }
@@ -174,6 +708,57 @@
    ],
    "bg": "teal",
    "visual": {
+    "type": "comp",
+    "layers": [
+     {
+      "img": "bacterium_cut",
+      "w": 480,
+      "x": 540,
+      "y": 980,
+      "rot": -8,
+      "wiggle": 5,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.5
+       },
+       {
+        "t": 0.1,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       },
+       {
+        "t": 0.55,
+        "alpha": 1,
+        "rot": -8
+       },
+       {
+        "t": 0.85,
+        "alpha": 0.25,
+        "rot": 25,
+        "scale": 0.85
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "bubbles",
+      "n": 12,
+      "rmin": 28,
+      "rmax": 90,
+      "t": 0.25
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "spore",
     "mode": "oxygen"
    }
@@ -190,6 +775,62 @@
    ],
    "bg": "navy",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "wound_section",
+     "zoom": [
+      1.0,
+      1.15
+     ],
+     "pan": [
+      0,
+      120
+     ]
+    },
+    "layers": [
+     {
+      "img": "spore_cut",
+      "w": 110,
+      "x": 540,
+      "y": 1300,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "bob": 4,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.55,
+        "alpha": 0
+       },
+       {
+        "t": 0.7,
+        "alpha": 1
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1300,
+      "r": 140,
+      "col": [
+       190,
+       110,
+       255
+      ],
+      "t": 0.55
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "wound"
    }
   },
@@ -211,6 +852,127 @@
    ],
    "bg": "soil",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "nail_ground",
+     "zoom": [
+      1.0,
+      1.12
+     ],
+     "pan": [
+      0,
+      80
+     ]
+    },
+    "layers": [
+     {
+      "img": "bacterium_cut",
+      "w": 120,
+      "x": 430,
+      "y": 1290,
+      "rot": 10,
+      "wiggle": 8,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.55,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.65,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "bacterium_cut",
+      "w": 120,
+      "x": 600,
+      "y": 1330,
+      "rot": -20,
+      "wiggle": 8,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.6100000000000001,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.71,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "bacterium_cut",
+      "w": 120,
+      "x": 720,
+      "y": 1250,
+      "rot": 30,
+      "wiggle": 8,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.67,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.77,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "glow",
+      "x": 560,
+      "y": 1290,
+      "r": 260,
+      "col": [
+       190,
+       110,
+       255
+      ],
+      "t": 0.55,
+      "a": 0.6
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "nail",
     "on": "soil",
     "rust": true
@@ -228,6 +990,116 @@
    ],
    "bg": "navy",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "courtyard",
+     "blur": 16,
+     "dark": 0.4,
+     "zoom": [
+      1.1,
+      1.15
+     ]
+    },
+    "layers": [
+     {
+      "img": "dog_cut",
+      "w": 760,
+      "x": 540,
+      "y": 1050,
+      "keys": [
+       {
+        "t": 0.2,
+        "alpha": 0,
+        "x": 1500
+       },
+       {
+        "t": 0.27,
+        "alpha": 1,
+        "x": 540
+       },
+       {
+        "t": 0.44,
+        "alpha": 1,
+        "x": 540
+       },
+       {
+        "t": 0.48,
+        "alpha": 0,
+        "x": -600
+       }
+      ]
+     },
+     {
+      "img": "syringe_cut",
+      "w": 700,
+      "x": 540,
+      "y": 1050,
+      "rot": -20,
+      "keys": [
+       {
+        "t": 0.46,
+        "alpha": 0,
+        "x": 1500
+       },
+       {
+        "t": 0.52,
+        "alpha": 1,
+        "x": 540
+       },
+       {
+        "t": 0.64,
+        "alpha": 1,
+        "x": 540
+       },
+       {
+        "t": 0.68,
+        "alpha": 0,
+        "x": -600
+       }
+      ]
+     },
+     {
+      "img": "thorn_cut",
+      "w": 720,
+      "x": 540,
+      "y": 1050,
+      "keys": [
+       {
+        "t": 0.66,
+        "alpha": 0,
+        "x": 1500
+       },
+       {
+        "t": 0.72,
+        "alpha": 1,
+        "x": 540
+       },
+       {
+        "t": 0.86,
+        "alpha": 1,
+        "x": 540
+       },
+       {
+        "t": 0.9,
+        "alpha": 0,
+        "x": -600
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "emoji",
+      "ch": "🔥",
+      "size": 300,
+      "x": 540,
+      "y": 1050,
+      "t": 0.0,
+      "until": 0.22
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "steps",
     "items": [
      "Burns & crush injuries",
@@ -261,6 +1133,91 @@
    ],
    "bg": "violet",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "wound_section",
+     "blur": 3,
+     "dark": 0.25,
+     "zoom": [
+      1.15,
+      1.3
+     ],
+     "pan": [
+      0,
+      120
+     ]
+    },
+    "layers": [
+     {
+      "img": "spore_cut",
+      "w": 240,
+      "x": 540,
+      "y": 1080,
+      "swap": [
+       [
+        0.3,
+        "bacterium_cut"
+       ]
+      ],
+      "wiggle": 4,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "scale": 1
+       },
+       {
+        "t": 0.3,
+        "scale": 0.8
+       },
+       {
+        "t": 0.45,
+        "scale": 1.6,
+        "e": "back"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "flash",
+      "t": 0.3,
+      "d": 0.2,
+      "col": [
+       200,
+       140,
+       255
+      ]
+     },
+     {
+      "type": "particles",
+      "x": 540,
+      "y": 1080,
+      "r": 420,
+      "n": 26,
+      "t": 0.55,
+      "d": 0.9
+     },
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1080,
+      "r": 300,
+      "col": [
+       140,
+       240,
+       60
+      ],
+      "t": 0.55,
+      "a": 0.5
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "toxin",
     "label": "Neurotoxin"
    }
@@ -284,6 +1241,66 @@
    "bg": "crimson",
    "source": "CDC Pink Book · 2.5 ng/kg",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "scale",
+     "zoom": [
+      1.0,
+      1.1
+     ]
+    },
+    "layers": [
+     {
+      "text": "0.000000 g",
+      "font": "osw",
+      "size": 120,
+      "col": [
+       120,
+       255,
+       140
+      ],
+      "glow": [
+       60,
+       255,
+       110
+      ],
+      "x": 540,
+      "y": 1420,
+      "stroke": 3,
+      "swap": [
+       [
+        0.42,
+        "0.000000175 g"
+       ]
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.08,
+        "alpha": 1
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1000,
+      "r": 120,
+      "col": [
+       140,
+       240,
+       60
+      ],
+      "a": 0.5
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "counter",
     "value": "175",
     "suffix": "NANOGRAM",
@@ -314,6 +1331,67 @@
    ],
    "bg": "navy",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "nerve_body",
+     "zoom": [
+      1.0,
+      1.05
+     ]
+    },
+    "fx": [
+     {
+      "type": "path",
+      "pts": [
+       [
+        800,
+        1250
+       ],
+       [
+        760,
+        1000
+       ],
+       [
+        700,
+        760
+       ],
+       [
+        620,
+        620
+       ],
+       [
+        540,
+        640
+       ],
+       [
+        540,
+        900
+       ]
+      ],
+      "t": 0.08,
+      "d": 0.75,
+      "col": [
+       140,
+       240,
+       60
+      ]
+     },
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 900,
+      "r": 160,
+      "col": [
+       140,
+       240,
+       60
+      ],
+      "t": 0.8,
+      "a": 0.7
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "nerve"
    }
   },
@@ -341,6 +1419,73 @@
    ],
    "bg": "teal",
    "visual": {
+    "type": "comp",
+    "layers": [
+     {
+      "img": "arm_muscles_cut",
+      "w": 430,
+      "x": 270,
+      "y": 1180,
+      "keys": [
+       {
+        "t": 0,
+        "x": -400
+       },
+       {
+        "t": 0.2,
+        "x": -400
+       },
+       {
+        "t": 0.32,
+        "x": 270,
+        "e": "out"
+       }
+      ]
+     },
+     {
+      "img": "hand_open_cut",
+      "w": 560,
+      "x": 680,
+      "y": 1180,
+      "swap": [
+       [
+        0.62,
+        "hand_fist_cut"
+       ]
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "y": 2400
+       },
+       {
+        "t": 0.12,
+        "y": 1180,
+        "e": "out"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "shake",
+      "t": 0.62,
+      "d": 0.4,
+      "amp": 14
+     },
+     {
+      "type": "flash",
+      "t": 0.62,
+      "d": 0.18,
+      "col": [
+       255,
+       60,
+       40
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "versus",
     "y": 540,
     "left_title": "Brake",
@@ -373,6 +1518,41 @@
    ],
    "bg": "crimson",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "patient",
+     "zoom": [
+      1.0,
+      1.18
+     ],
+     "pan": [
+      0,
+      -40
+     ]
+    },
+    "fx": [
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 900,
+      "r": 180,
+      "col": [
+       255,
+       50,
+       40
+      ],
+      "t": 0.05,
+      "a": 0.55
+     },
+     {
+      "type": "shake",
+      "t": 0.72,
+      "d": 0.5,
+      "amp": 10
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "spasm",
     "zones": [
      "jaw",
@@ -407,6 +1587,45 @@
    "bg": "violet",
    "source": "CDC Pink Book",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "patient",
+     "blur": 2,
+     "zoom": [
+      1.18,
+      1.25
+     ],
+     "dark": 0.1
+    },
+    "fx": [
+     {
+      "type": "rings",
+      "x": 860,
+      "y": 700,
+      "t": 0.35,
+      "r": 300
+     },
+     {
+      "type": "flash",
+      "t": 0.5,
+      "d": 0.25
+     },
+     {
+      "type": "shake",
+      "t": 0.5,
+      "d": 0.7,
+      "amp": 20
+     },
+     {
+      "type": "crack",
+      "x": 560,
+      "y": 1150,
+      "t": 0.78,
+      "r": 200
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "spasm",
     "zones": [
      "jaw",
@@ -434,6 +1653,122 @@
    ],
    "bg": "navy",
    "visual": {
+    "type": "comp",
+    "layers": [
+     {
+      "img": "vial_cut",
+      "w": 330,
+      "x": 830,
+      "y": 1450,
+      "keys": [
+       {
+        "t": 0,
+        "y": 2300
+       },
+       {
+        "t": 0.1,
+        "y": 1450,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "toxin_cut",
+      "w": 150,
+      "x": 420,
+      "y": 950,
+      "glow": [
+       140,
+       240,
+       60
+      ],
+      "bob": 10
+     },
+     {
+      "img": "toxin_cut",
+      "w": 120,
+      "x": 680,
+      "y": 820,
+      "glow": [
+       140,
+       240,
+       60
+      ],
+      "bob": 8
+     },
+     {
+      "img": "antibody_cut",
+      "w": 240,
+      "x": 420,
+      "y": 1000,
+      "keys": [
+       {
+        "t": 0.2,
+        "x": -300,
+        "alpha": 1
+       },
+       {
+        "t": 0.45,
+        "x": 400,
+        "e": "out"
+       }
+      ]
+     },
+     {
+      "img": "antibody_cut",
+      "w": 220,
+      "x": 690,
+      "y": 870,
+      "keys": [
+       {
+        "t": 0.25,
+        "x": 1400
+       },
+       {
+        "t": 0.5,
+        "x": 700,
+        "e": "out"
+       }
+      ]
+     },
+     {
+      "img": "toxin_cut",
+      "w": 140,
+      "x": 560,
+      "y": 1200,
+      "glow": [
+       255,
+       60,
+       40
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.6,
+        "alpha": 0
+       },
+       {
+        "t": 0.7,
+        "alpha": 1
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "emoji",
+      "ch": "🔒",
+      "size": 110,
+      "x": 640,
+      "y": 1200,
+      "t": 0.72
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "antibody"
    }
   },
@@ -450,6 +1785,29 @@
    "bg": "crimson",
    "source": "CDC",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "icu",
+     "blur": 4,
+     "dark": 0.35,
+     "zoom": [
+      1.0,
+      1.08
+     ]
+    },
+    "fx": [
+     {
+      "type": "people",
+      "n": 10,
+      "red": 1,
+      "y": 1250,
+      "h": 160,
+      "t": 0.05,
+      "red_at": 2.2
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "counter",
     "value": "1/10",
     "suffix": "CASES FATAL"
@@ -474,6 +1832,81 @@
    "bg": "violet",
    "source": "CDC Pink Book",
    "visual": {
+    "type": "comp",
+    "layers": [
+     {
+      "img": "toxin_cut",
+      "w": 90,
+      "x": 540,
+      "y": 980,
+      "glow": [
+       140,
+       240,
+       60
+      ],
+      "bob": 5
+     },
+     {
+      "img": "antibody_cut",
+      "w": 200,
+      "x": 300,
+      "y": 1150,
+      "rot": 20,
+      "wiggle": 4,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.2,
+        "alpha": 0.9
+       }
+      ]
+     },
+     {
+      "img": "antibody_cut",
+      "w": 180,
+      "x": 790,
+      "y": 1180,
+      "rot": -25,
+      "wiggle": 4,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.25,
+        "alpha": 0.9
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "rings",
+      "x": 540,
+      "y": 980,
+      "t": 0.1,
+      "r": 240,
+      "col": [
+       200,
+       160,
+       255
+      ]
+     },
+     {
+      "type": "emoji",
+      "ch": "❓",
+      "size": 150,
+      "x": 540,
+      "y": 1380,
+      "t": 0.6
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "title",
     "title": "No immunity",
     "sub": "even after recovery"
@@ -497,6 +1930,146 @@
    ],
    "bg": "teal",
    "visual": {
+    "type": "comp",
+    "layers": [
+     {
+      "img": "vial_cut",
+      "w": 520,
+      "x": 540,
+      "y": 1100,
+      "keys": [
+       {
+        "t": 0,
+        "y": 2300
+       },
+       {
+        "t": 0.12,
+        "y": 1100,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "antibody_cut",
+      "w": 170,
+      "x": 230,
+      "y": 900,
+      "rot": -20,
+      "wiggle": 5,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.5,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.6,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "antibody_cut",
+      "w": 170,
+      "x": 850,
+      "y": 950,
+      "rot": 25,
+      "wiggle": 5,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.55,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.65,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "antibody_cut",
+      "w": 170,
+      "x": 260,
+      "y": 1350,
+      "rot": 10,
+      "wiggle": 5,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.6,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.7,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "antibody_cut",
+      "w": 170,
+      "x": 840,
+      "y": 1380,
+      "rot": -15,
+      "wiggle": 5,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.65,
+        "alpha": 0,
+        "scale": 0.3
+       },
+       {
+        "t": 0.75,
+        "alpha": 1,
+        "scale": 1,
+        "e": "back"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1100,
+      "r": 320,
+      "col": [
+       110,
+       190,
+       255
+      ],
+      "a": 0.5
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "antibody",
     "syringe": true
    }
@@ -520,6 +2093,64 @@
    "bg": "amber",
    "source": "MoHFW · UIP",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "phc",
+     "blur": 10,
+     "dark": 0.3,
+     "zoom": [
+      1.0,
+      1.08
+     ]
+    },
+    "layers": [
+     {
+      "img": "vial_cut",
+      "w": 500,
+      "x": 540,
+      "y": 1120,
+      "keys": [
+       {
+        "t": 0,
+        "y": 2300
+       },
+       {
+        "t": 0.1,
+        "y": 1120,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "card": "Td = Tetanus + diphtheria",
+      "icon": "💉",
+      "x": 540,
+      "y": 1520,
+      "col": [
+       150,
+       255,
+       90
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.45,
+        "alpha": 0,
+        "y": 1600
+       },
+       {
+        "t": 0.55,
+        "alpha": 1,
+        "y": 1520
+       }
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "versus",
     "y": 540,
     "left_title": "OLD: TT",
@@ -554,6 +2185,127 @@
    "bg": "navy",
    "source": "CDC wound guidance",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "hand_wash",
+     "seq": [
+      [
+       "hand_wash",
+       0
+      ],
+      [
+       "hand_wash",
+       0.22,
+       18,
+       0.55
+      ]
+     ],
+     "zoom": [
+      1.0,
+      1.08
+     ]
+    },
+    "layers": [
+     {
+      "card": "Wash with soap & clean water",
+      "icon": "🧼",
+      "x": 540,
+      "y": 620,
+      "cw": 900,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.05,
+        "alpha": 1,
+        "x": 540
+       }
+      ]
+     },
+     {
+      "card": "Td booster every 10 years",
+      "icon": "💉",
+      "x": 540,
+      "y": 800,
+      "cw": 900,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.25,
+        "alpha": 0,
+        "x": 1400
+       },
+       {
+        "t": 0.31,
+        "alpha": 1,
+        "x": 540
+       }
+      ]
+     },
+     {
+      "card": "Deep/dirty wound + last dose 5+ yrs",
+      "icon": "⚠️",
+      "x": 540,
+      "y": 980,
+      "cw": 900,
+      "col": [
+       255,
+       90,
+       70
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.48,
+        "alpha": 0,
+        "x": 1400
+       },
+       {
+        "t": 0.54,
+        "alpha": 1,
+        "x": 540
+       }
+      ]
+     },
+     {
+      "card": "See a doctor the same day",
+      "icon": "🩺",
+      "x": 540,
+      "y": 1160,
+      "cw": 900,
+      "col": [
+       150,
+       255,
+       90
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.8,
+        "alpha": 0,
+        "x": 1400
+       },
+       {
+        "t": 0.86,
+        "alpha": 1,
+        "x": 540
+       }
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "steps",
     "items": [
      "Wash with soap & clean water",
@@ -585,6 +2337,55 @@
    ],
    "bg": "soil",
    "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "nail_ground",
+     "zoom": [
+      1.12,
+      1.0
+     ]
+    },
+    "layers": [
+     {
+      "img": "bacterium_cut",
+      "w": 150,
+      "x": 560,
+      "y": 1290,
+      "rot": -10,
+      "wiggle": 7,
+      "glow": [
+       190,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.3,
+        "alpha": 0
+       },
+       {
+        "t": 0.4,
+        "alpha": 1
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "emoji",
+      "ch": "📤",
+      "size": 150,
+      "x": 820,
+      "y": 1420,
+      "t": 0.75
+     }
+    ]
+   },
+   "visual_fallback": {
     "type": "nail",
     "on": "soil",
     "rust": true
@@ -615,12 +2416,45 @@
   ],
   "bg": "amber",
   "visual": {
+   "type": "comp",
+   "layers": [
+    {
+     "img": "notes_page",
+     "w": 640,
+     "x": 540,
+     "y": 1080,
+     "rot": -5,
+     "keys": [
+      {
+       "t": 0,
+       "y": 2600
+      },
+      {
+       "t": 0.15,
+       "y": 1080,
+       "e": "back"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "type": "emoji",
+     "ch": "💬",
+     "size": 160,
+     "x": 860,
+     "y": 700,
+     "t": 0.05
+    }
+   ]
+  },
+  "hold": 0.4,
+  "visual_fallback": {
    "type": "title",
    "title": "Comment: TETANUS",
    "sub": "free 1-page notes in your DM"
-  },
-  "hold": 0.4
+  }
  },
  "cta_dm": null,
- "vo_speed": 1.08
+ "vo_speed": 1.1
 }

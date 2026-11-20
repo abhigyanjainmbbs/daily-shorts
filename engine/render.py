@@ -10,7 +10,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from gfx import W, H, font, text_sprite, paste, CREAM, ease, rrect, film_overlay, grain, keywords, source_card, KW_COLS
 import scenes as S
 import scenes2 as S2
+import comp as C
 S.TYPES.update(S2.EXTRA)
+S.TYPES['comp'] = C.Comp
 from captions import SceneCaptions
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -134,6 +136,20 @@ def composer(script_path, audio_dir):
             bgs[p] = S.background(p, seed=seed)
         return bgs[p]
 
+    img_dir = os.path.join(ROOT, script.get('img_dir') or os.path.join('assets', 'gen', script.get('id', '')))
+    notes_png = os.path.join(ROOT, 'notes', script.get('id', '') + '.png')
+    if os.path.exists(notes_png) and os.path.isdir(img_dir) and not os.path.exists(os.path.join(img_dir, 'notes_page.png')):
+        import shutil
+        shutil.copy(notes_png, os.path.join(img_dir, 'notes_page.png'))
+    for sp_ in list(script['scenes']) + [script.get('cta_plain') or {}, script.get('cta_dm') or {}]:
+        if sp_ and isinstance(sp_.get('visual'), dict):
+            sp_['visual']['_dir'] = img_dir
+            if sp_['visual'].get('type') == 'comp' and sp_.get('visual_fallback'):
+                need = C.needed_images(sp_['visual'])
+                missing = [n for n in need if not os.path.exists(os.path.join(img_dir, n + '.png'))]
+                if missing:
+                    print('fallback visual (missing %s)' % ', '.join(missing), file=sys.stderr)
+                    sp_['visual'] = dict(sp_['visual_fallback'])
     show_caps = script.get('captions', True)
     film = script.get('film', False)
     objs = []
@@ -152,9 +168,17 @@ def composer(script_path, audio_dir):
         P = S.PALETTES[sp_pal]
         fr = bg_for(sp_pal).copy()
         lt = t - s['t0']
-        S.bokeh(fr, t, tuple(P['acc']))
+        is_comp = isinstance(sc, C.Comp)
+        if not is_comp:
+            S.bokeh(fr, t, tuple(P['acc']))
         layer = Image.new('RGBA', (W, H), (0, 0, 0, 0))
         sc.draw(layer, lt)
+        if is_comp:
+            ox_, oy_ = sc.offset(lt)
+            if ox_ or oy_:
+                shifted = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+                shifted.paste(layer, (int(ox_), int(oy_)), layer)
+                layer = shifted
         z = 1.0 + 0.035 * min(1.0, lt / max(s['t1'] - s['t0'], 0.5))
         if z > 1.001:
             nw, nh = int(W * z), int(H * z)

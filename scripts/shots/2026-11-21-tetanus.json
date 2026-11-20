@@ -1,0 +1,175 @@
+{
+ "id": "2026-11-21-tetanus",
+ "plate_style": "Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark.",
+ "cut_style": "Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark.",
+ "shots": [
+  {
+   "name": "courtyard",
+   "kind": "plate",
+   "priority": "A",
+   "prompt": "A rural Indian village house courtyard at golden hour, seen from ground level: a turquoise wooden door with a white frame in a purple-blue painted wall, terracotta pots and a few green plants, and a worn wooden plank floor filling the bottom third of the frame. The house is softly out of focus. Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark."
+  },
+  {
+   "name": "nail_up_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "One long rusty iron nail standing perfectly upright with its sharp point facing up, heavy orange-brown rust with flaking patches, macro product photo. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "foot_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "A bare adult Indian foot seen from the side, sole facing down and toes pointing left, as if about to step down, the whole foot and ankle visible. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "hand_nail_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "An adult Indian hand pinching a long rusty iron nail between thumb and index finger, the nail pointing diagonally down to the left, the whole hand and wrist visible. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "soil_day",
+   "kind": "plate",
+   "priority": "A",
+   "prompt": "A cutaway cross-section of the ground like a diorama: green grass and tiny wild flowers along the top with blue sky and soft clouds above, then dark brown topsoil with roots, pebbles and an earthworm, then a reddish clay layer, then grey-blue rock at the very bottom. Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark."
+  },
+  {
+   "name": "soil_storm",
+   "kind": "plate",
+   "priority": "A",
+   "prompt": "EDIT OF THE PREVIOUS IMAGE: keep exactly the same composition and soil layers, change only the sky to a dark stormy purple evening with rain and lightning far away."
+  },
+  {
+   "name": "bacterium_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "A 3D render of one rod-shaped bacterium, Clostridium tetani: a slender glossy purple rod with a round cream-white spore at one end, giving a drumstick or tennis-racket shape, with thin wavy flagella around it. Scientific illustration, lying horizontally. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "microscope",
+   "kind": "plate",
+   "priority": "A",
+   "prompt": "The view through a light microscope eyepiece: a bright circular field on a black surround, showing Gram-stained purple slender rods, each with a round unstained terminal spore at one end (drumstick appearance), scattered across the field, realistic micrograph look. Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark."
+  },
+  {
+   "name": "spore_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "A 3D render of a bacterial endospore: a smooth cream-white oval capsule wrapped in a thick layered protective coat like armour plates, glossy, subtle inner glow, scientific illustration. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "autoclave",
+   "kind": "plate",
+   "priority": "A",
+   "prompt": "A hospital steam autoclave sterilizer in a clean medical room: a large round stainless-steel door in the centre of the frame with a small blank digital display above it, steam wisps, cool blue light mixed with warm highlights. Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark."
+  },
+  {
+   "name": "wound_section",
+   "kind": "plate",
+   "priority": "A",
+   "prompt": "A stylized 3D medical cross-section of human skin and tissue filling the frame: thin skin layer at the top, pink dermis, yellow fat, red muscle below; a deep narrow puncture tract goes straight down from the skin surface at the centre and ends closed and dark deep in the tissue. Air bubbles sit at the surface and cannot go down. Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark."
+  },
+  {
+   "name": "nail_ground",
+   "kind": "plate",
+   "priority": "A",
+   "prompt": "A rusty iron nail lying diagonally on cracked dry brown soil outdoors in rural India, in the lower middle of the frame, low camera angle, village trees and huts softly blurred behind, golden afternoon light. Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark."
+  },
+  {
+   "name": "dog_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "A brown Indian street dog snarling with teeth showing, side view, full body. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "syringe_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "A used disposable plastic syringe with its needle attached, slightly dirty and scratched, lying diagonally. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "thorn_cut",
+   "kind": "cut",
+   "priority": "B",
+   "prompt": "A branch of babool (acacia) with long sharp white thorns and small leaves, diagonal. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "toxin_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "A 3D render of a toxic protein molecule cluster: a glowing neon-green crystalline blob with knobbly surface, glossy, scientific illustration. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "scale",
+   "kind": "plate",
+   "priority": "A",
+   "prompt": "A close-up of a precision digital laboratory weighing scale on a dark lab bench, metal tweezers above the weighing pan holding a tiny glowing green speck, the scale's display is blank and dark, dramatic dark background with soft rim light. Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark."
+  },
+  {
+   "name": "nerve_body",
+   "kind": "plate",
+   "priority": "A",
+   "prompt": "A semi-transparent glass-like human body standing, full body, front view, centred, arms slightly away from the body, showing the nervous system: brain, spinal cord and the nerves of the arms and legs glowing soft blue, dark navy background, medical 3D render. Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark."
+  },
+  {
+   "name": "hand_open_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "An adult Indian hand with the palm facing the camera and the fingers spread wide, the wrist and lower forearm visible at the bottom. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "hand_fist_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "EDIT/SAME HAND AS BEFORE: the same adult Indian hand clenched in a tight fist, knuckles facing the camera, tense tendons, forearm visible at the bottom, same skin tone and lighting."
+  },
+  {
+   "name": "arm_muscles_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "An anatomical illustration of a human forearm and hand with the skin removed, showing red muscles and white tendons, palm facing the camera, fingers spread, medical 3D render, vertical. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "patient",
+   "kind": "plate",
+   "priority": "A",
+   "prompt": "A respectful, non-graphic medical illustration: a patient lying in a hospital bed with the body stiff and the back arched (opisthotonus), jaw clenched, eyes open, dim blue-green hospital room, painterly realistic, the patient in the middle third of the frame. Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark."
+  },
+  {
+   "name": "icu",
+   "kind": "plate",
+   "priority": "A",
+   "prompt": "An empty ICU bed with a ventilator and a heart monitor showing a green trace, dim blue lighting, moody and cinematic, bed in the lower half of the frame. Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark."
+  },
+  {
+   "name": "antibody_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "A 3D render of one Y-shaped antibody protein, glossy blue with lighter tips, scientific illustration. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "vial_cut",
+   "kind": "cut",
+   "priority": "A",
+   "prompt": "A small glass vaccine vial with a plain blank white label and an aluminium cap, standing upright next to a clean new syringe. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  },
+  {
+   "name": "hand_wash",
+   "kind": "plate",
+   "priority": "A",
+   "prompt": "A close-up of hands washing a small cut on the palm under running tap water with a bar of soap and white foam, bright clean bathroom sink, photoreal. Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark."
+  },
+  {
+   "name": "phc",
+   "kind": "plate",
+   "priority": "B",
+   "prompt": "A clean Indian government primary health centre vaccination room: a steel table with vials and a blue vaccine cold box, a bench, soft daylight from a window, no readable text anywhere. Vertical 2:3 portrait image. Stylized photoreal digital art with a slight painterly 3D-diorama feel, warm cinematic lighting, rich saturated colours, soft depth of field. Keep the top fifth of the frame calm and uncluttered. No text, no letters, no logos, no watermark."
+  },
+  {
+   "name": "doctor_cut",
+   "kind": "cut",
+   "priority": "B",
+   "prompt": "A friendly young Indian doctor in a white coat with a stethoscope, waist-up, smiling slightly, facing the camera. Isolated on a plain pure white background, the whole object visible with generous margin around it, soft even studio light, photoreal, no cast shadow on the background, no text, no watermark."
+  }
+ ]
+}
