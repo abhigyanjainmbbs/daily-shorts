@@ -1,0 +1,11 @@
+ok hand_open 36964
+retry rusty_nail 0: HTTP Error 402: Payment Required
+retry rusty_nail 1: HTTP Error 402: Payment Required
+retry rusty_nail 2: HTTP Error 402: Payment Required
+ok rusty_nail 62008
+retry bg_house 0: HTTP Error 402: Payment Required
+retry bg_house 1: HTTP Error 402: Payment Required
+retry bg_house 2: HTTP Error 402: Payment Required
+ok bg_house 69851
+cut hand_open.png
+cut rusty_nail.png
