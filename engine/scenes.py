@@ -398,7 +398,7 @@ class Versus(Scene):
             else:
                 dd.line([(cx - 24, cy - 24), (cx + 24, cy + 24)], fill=col + (255,), width=12)
                 dd.line([(cx - 24, cy + 24), (cx + 24, cy - 24)], fill=col + (255,), width=12)
-            spr, ox, oy, tw, th = text_sprite(title.upper(), font('pop_b', 54), col + (255,), shadow=0)
+            spr, ox, oy, tw, th = text_sprite(title if v.get('keep_case') else title.upper(), font('pop_b', 54), col + (255,), shadow=0)
             paste(card, spr, pad + 130 - ox, pad + 70 - th / 2 - oy)
             for j, ln in enumerate(lines):
                 s2, ox2, oy2, tw2, th2 = text_sprite(ln, fnt, CREAM + (255,), shadow=0)

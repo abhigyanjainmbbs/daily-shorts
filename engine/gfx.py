@@ -366,10 +366,10 @@ def keywords(fr, t, kicker, punch, col, t_k, t_p):
         size = 118
         f = font('osw', size)
         d0 = ImageDraw.Draw(Image.new('RGBA', (8, 8)))
-        while d0.textlength(punch.upper(), font=f) > 940 and size > 60:
+        while d0.textlength(punch, font=f) > 940 and size > 60:
             size -= 6
             f = font('osw', size)
-        spr, ox, oy, tw, th = text_sprite(punch.upper(), f, tuple(col) + (255,), stroke=3, stroke_fill=(0, 0, 0, 220),
+        spr, ox, oy, tw, th = text_sprite(punch, f, tuple(col) + (255,), stroke=3, stroke_fill=(0, 0, 0, 220),
                                           shadow=0.95, blur=10)
         k = ease(t, t_p, 0.1)
         s = 1 + 0.22 * (1 - ease(t, t_p, 0.16))

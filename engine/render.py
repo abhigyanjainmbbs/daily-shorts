@@ -114,7 +114,7 @@ def disclaimer_sprite(text):
     return card
 
 
-def render(script_path, audio_dir, out_path):
+def composer(script_path, audio_dir):
     script = json.load(open(script_path))
     pal = script.get('palette', 'ocean')
     tl, total = build_timeline(script, audio_dir)
@@ -135,14 +135,9 @@ def render(script_path, audio_dir, out_path):
         objs.append((s, S.make(sp, s['t1'] - s['t0'], sp_pal, i), SceneCaptions(sp.get('cap', '') if show_caps else '', s['vo0'], s['vo1'] + GAP * 0.5), sp_pal))
     wm, wox, woy, wtw, wth = text_sprite(CFG['watermark'], font('pop_m', 34), (255, 255, 255, 72), shadow=0, blur=2)
     disc = disclaimer_sprite(CFG['disclaimer']) if CFG.get('disclaimer') else None
-    tmpdir = os.path.dirname(os.path.abspath(out_path))
-    body_mp4 = os.path.join(tmpdir, '_body.mp4')
-    nframes = int(math.ceil(total * FPS))
-    ff = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
-                           '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-pix_fmt', 'yuv420p', body_mp4], stdin=subprocess.PIPE)
-    si = 0
-    for fi in range(nframes):
+    def frame(fi):
         t = fi / FPS
+        si = 0
         while si < len(objs) - 1 and t >= objs[si][0]['t1']:
             si += 1
         s, sc, cap, sp_pal = objs[si]
@@ -194,7 +189,20 @@ def render(script_path, audio_dir, out_path):
         paste(fr, wm, W / 2 - wtw / 2 - wox, 1530 - wth / 2 - woy)
         if film:
             fr.alpha_composite(grain(fi))
-        ff.stdin.write(fr.convert('RGB').tobytes())
+        return fr.convert('RGB')
+
+    return script, tl, total, frame
+
+
+def render(script_path, audio_dir, out_path):
+    script, tl, total, frame = composer(script_path, audio_dir)
+    tmpdir = os.path.dirname(os.path.abspath(out_path))
+    body_mp4 = os.path.join(tmpdir, '_body.mp4')
+    nframes = int(math.ceil(total * FPS))
+    ff = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
+                           '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-pix_fmt', 'yuv420p', body_mp4], stdin=subprocess.PIPE)
+    for fi in range(nframes):
+        ff.stdin.write(frame(fi).tobytes())
     ff.stdin.close()
     ff.wait()
     outro = os.path.join(ROOT, 'assets', 'outro.mp4')

@@ -175,8 +175,7 @@
    "bg": "teal",
    "visual": {
     "type": "spore",
-    "mode": "oxygen",
-    "label": "Obligate anaerobe"
+    "mode": "oxygen"
    }
   },
   {
@@ -483,8 +482,7 @@
    "visual": {
     "type": "title",
     "title": "No immunity",
-    "sub": "even after recovery",
-    "emoji": "🔁"
+    "sub": "even after recovery"
    }
   },
   {
@@ -536,10 +534,11 @@
    "visual": {
     "type": "versus",
     "y": 540,
-    "left_title": "Old: TT",
+    "left_title": "OLD: TT",
     "left_text": "Tetanus toxoid only",
-    "right_title": "Now: Td",
-    "right_text": "Tetanus + adult diphtheria"
+    "right_title": "NOW: Td",
+    "right_text": "Tetanus + adult diphtheria",
+    "keep_case": true
    }
   },
   {
@@ -571,7 +570,7 @@
     "items": [
      "Wash with soap & clean water",
      "Td booster every 10 years",
-     "Deep/dirty wound + last dose 5+ yrs ago → doctor today"
+     "Deep/dirty wound + last dose 5+ yrs ago: see a doctor today"
     ],
     "icons": [
      "🧼",
@@ -617,8 +616,7 @@
   "bg": "amber",
   "visual": {
    "type": "title",
-   "title": "Next myth?",
-   "emoji": "💬"
+   "title": "Next myth?"
   },
   "hold": 0.4
  },
