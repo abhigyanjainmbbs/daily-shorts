@@ -1,0 +1,6 @@
+{"id": "test", "style": "photorealistic, cinematic soft warm lighting, shallow depth of field, high detail, 50mm photo",
+ "shots": [
+  {"name": "hand_open", "prompt": "a single adult Indian human hand, palm facing camera, fingers spread, wrist at bottom edge, isolated on plain flat white background, studio product photo", "w": 768, "h": 1152, "cutout": true, "seed": 11},
+  {"name": "rusty_nail", "prompt": "one old rusty iron nail lying diagonally, macro photo, isolated on plain flat white background", "w": 1024, "h": 1024, "cutout": true, "seed": 3},
+  {"name": "bg_house", "prompt": "blurred background of a colourful rural Indian village house with turquoise wooden door, white door frame, purple wall, bokeh, golden hour, vertical", "w": 768, "h": 1344, "seed": 5}
+ ]}
