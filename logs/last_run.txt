@@ -1,0 +1,3 @@
+scene 0: eleven_v3 -> /home/runner/work/daily-shorts/daily-shorts/voice/voice-test/scene_00.mp3
+scene 1: eleven_v3 -> /home/runner/work/daily-shorts/daily-shorts/voice/voice-test/scene_01.mp3
+voice done voice-test
