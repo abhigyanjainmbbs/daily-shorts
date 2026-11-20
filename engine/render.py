@@ -117,6 +117,14 @@ def disclaimer_sprite(text):
 def composer(script_path, audio_dir):
     script = json.load(open(script_path))
     pal = script.get('palette', 'ocean')
+    speed = float(script.get('vo_speed', CFG.get('vo_speed', 1.0)))
+    if abs(speed - 1.0) > 1e-3:  # speed the voice up/down without changing pitch
+        import tempfile
+        fast = tempfile.mkdtemp(prefix='vo_')
+        for f in sorted(glob.glob(os.path.join(audio_dir, 'scene_*.*'))):
+            name = os.path.splitext(os.path.basename(f))[0] + '.wav'
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', f, '-filter:a', f'atempo={speed}', '-ar', str(SR), os.path.join(fast, name)], check=True)
+        audio_dir = fast
     tl, total = build_timeline(script, audio_dir)
     seed = sum(map(ord, script.get('id', ''))) % 1000
     bgs = {}

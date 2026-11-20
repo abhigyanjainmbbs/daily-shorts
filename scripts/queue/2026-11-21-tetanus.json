@@ -9,7 +9,7 @@
   "TETANUS?",
   "red"
  ],
- "description": "Jung lagi keel se tetanus hota hai? Nahi! Asli villain hai mitti mein rehne wala Clostridium tetani — aur uska zeher tetanospasmin, duniya ke sabse potent toxins mein se ek.\n\nIs video mein MBBS-level detail: drumstick appearance, obligate anaerobe, retrograde axonal transport, GABA/glycine block, trismus, risus sardonicus, opisthotonus — aur kyun tetanus hone ke baad bhi immunity nahi milti.\n\nSources: CDC Pink Book, Chapter 21 (Tetanus); CDC Clinical Overview of Tetanus; Ananthanarayan & Paniker's Textbook of Microbiology; MoHFW Td vaccine guidelines; WHO (India MNTE validation, 2015).",
+ "description": "Jung lagi keel se tetanus hota hai? Nahi! Asli villain hai mitti mein rehne wala Clostridium tetani — aur uska zeher tetanospasmin, duniya ke sabse potent toxins mein se ek.\n\nIs video mein MBBS-level detail: drumstick appearance, obligate anaerobe, retrograde axonal transport, GABA/glycine block, trismus, risus sardonicus, opisthotonus — aur kyun tetanus hone ke baad bhi immunity nahi milti.\n\n💬 Comment \"TETANUS\" — free 1-page tetanus notes DM mein!\n📤 Share karo us dost ko jo abhi bhi sochta hai jung se tetanus hota hai.\n\nSources: CDC Pink Book, Chapter 21 (Tetanus); CDC Clinical Overview of Tetanus; Ananthanarayan & Paniker's Textbook of Microbiology; MoHFW Td vaccine guidelines (UIP).",
  "hashtags": [
   "tetanus",
   "rustynail",
@@ -438,19 +438,13 @@
    }
   },
   {
-   "vo": "नए nerve endings उगने में हफ़्ते लगते हैं — और इलाज के बाद भी, लगभग दस में से एक की जान चली जाती है।",
+   "vo": "और इलाज के बाद भी, लगभग दस में से एक मरीज़ की जान चली जाती है।",
    "kw": [
-    [
-     "RECOVERY",
-     "HAFTON ICU",
-     "blue",
-     0.0
-    ],
     [
      "ILAAJ KE BAAD BHI",
      "10 MEIN 1",
      "red",
-     0.55
+     0.0
     ]
    ],
    "bg": "crimson",
@@ -508,7 +502,7 @@
    }
   },
   {
-   "vo": "India में अब टी-टी की जगह टी-डी लगता है — साथ में diphtheria से भी सुरक्षा। और इसी vaccination से India ने नवजात टिटनेस eliminate किया।",
+   "vo": "और India में अब टी-टी की जगह टी-डी लगता है — साथ में diphtheria से भी सुरक्षा।",
    "kw": [
     [
      "AB TT NAHI",
@@ -520,17 +514,11 @@
      "BONUS",
      "DIPHTHERIA BHI",
      "green",
-     0.3
-    ],
-    [
-     "INDIA 2015",
-     "NEWBORN TETANUS ELIMINATED",
-     "green",
-     0.62
+     0.5
     ]
    ],
    "bg": "amber",
-   "source": "MoHFW · WHO (2015)",
+   "source": "MoHFW · UIP",
    "visual": {
     "type": "versus",
     "y": 540,
@@ -580,13 +568,19 @@
    }
   },
   {
-   "vo": "तो याद रखना — डर जंग से नहीं... मिट्टी से है।",
+   "vo": "तो अगली बार कोई बोले कि जंग से टिटनेस होता है — बस इतना बोलना: जंग नहीं भाई, क्लॉस्ट्रिडियम टेटनाई। और ये video उसी को भेज देना।",
    "kw": [
     [
-     "NOT THE RUST",
-     "MITTI SE DARO",
-     "yellow",
+     "NEXT TIME BOLNA",
+     "JUNG NAHI, C. TETANI",
+     "green",
      0.0
+    ],
+    [
+     "AUR YE VIDEO",
+     "USI KO BHEJO",
+     "yellow",
+     0.72
     ]
    ],
    "bg": "soil",
@@ -598,27 +592,35 @@
   }
  ],
  "cta_plain": {
-  "vo": "ये video सिर्फ़ educational है, medical advice नहीं — चोट लगे तो doctor से मिलो। और comment करो — अगला कौन सा myth तोड़ूँ?",
+  "vo": "Comment में लिखो TETANUS — मैं DM में भेजूँगा free one-page notes। और याद रहे, ये video सिर्फ़ educational है, medical advice नहीं।",
   "kw": [
+   [
+    "COMMENT KARO",
+    "TETANUS",
+    "yellow",
+    0.0
+   ],
+   [
+    "DM MEIN FREE",
+    "1-PAGE NOTES",
+    "green",
+    0.35
+   ],
    [
     "EDUCATIONAL ONLY",
     "NOT MEDICAL ADVICE",
     "white",
-    0.0
-   ],
-   [
-    "COMMENT KARO",
-    "AGLA MYTH?",
-    "yellow",
-    0.55
+    0.68
    ]
   ],
   "bg": "amber",
   "visual": {
    "type": "title",
-   "title": "Next myth?"
+   "title": "Comment: TETANUS",
+   "sub": "free 1-page notes in your DM"
   },
   "hold": 0.4
  },
- "cta_dm": null
+ "cta_dm": null,
+ "vo_speed": 1.08
 }
