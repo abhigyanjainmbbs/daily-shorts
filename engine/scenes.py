@@ -403,7 +403,8 @@ class Versus(Scene):
             for j, ln in enumerate(lines):
                 s2, ox2, oy2, tw2, th2 = text_sprite(ln, fnt, CREAM + (255,), shadow=0)
                 paste(card, s2, pad + 50 - ox2, pad + 140 + j * 56 - oy2)
-            y = 420 if i == 0 else 420 + ch + 60
+            y0 = int(v.get('y', 420))
+            y = y0 if i == 0 else y0 + ch + 60
             if i == 0 and t > half:
                 k *= 0.55
             paste(fr, drop_shadow(card, (0, 12), 12, 150), 80 - 30 - 6, y - 30, k)

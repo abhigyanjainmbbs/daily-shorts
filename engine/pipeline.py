@@ -33,6 +33,8 @@ def release_text(script):
     desc = script.get('description', '').strip()
     if CFG.get('dm_enabled'):
         desc += f"\n\n💬 Comment \"{CFG['dm_keyword']}\" — free 1-page notes DM mein!"
+    desc += ("\n\n⚠️ Disclaimer: This video is for educational purposes only and is not medical advice. "
+             "It does not replace a consultation with a qualified doctor. If you are injured or unwell, please see a doctor.")
     tags = ' '.join('#' + t.replace(' ', '') for t in script.get('hashtags', []))
     return f"{desc}\n\n{tags}".strip()
 

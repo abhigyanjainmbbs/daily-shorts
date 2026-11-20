@@ -7,8 +7,10 @@ import json, os, subprocess, sys, math, glob
 import numpy as np
 from PIL import Image
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from gfx import W, H, font, text_sprite, paste, CREAM, ease
+from gfx import W, H, font, text_sprite, paste, CREAM, ease, rrect, film_overlay, grain, keywords, source_card, KW_COLS
 import scenes as S
+import scenes2 as S2
+S.TYPES.update(S2.EXTRA)
 from captions import SceneCaptions
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -77,7 +79,8 @@ def mix_audio(tl, total, outro_path, out_wav, sfx_dir):
     env = np.convolve(np.abs(vo[:, 0]), np.ones(int(0.25 * SR)) / int(0.25 * SR), 'same')
     duck = 1 - 0.6 * np.clip(env / 0.05, 0, 1)
     mix = vo + mus * (0.28 * duck)[:, None]
-    sfx_map = {'title': 'stinger', 'counter': 'tick', 'organ': 'heartbeat', 'body': 'heartbeat', 'taxi': 'riser', 'versus': 'boom'}
+    sfx_map = {'title': 'stinger', 'counter': 'tick', 'organ': 'heartbeat', 'body': 'heartbeat', 'taxi': 'riser', 'versus': 'boom',
+               'nail': 'boom', 'toxin': 'riser', 'nerve': 'riser', 'spasm': 'heartbeat', 'soil': 'wind'}
     for s in tl:
         typ = s['spec'].get('visual', {}).get('type')
         name = s['spec'].get('sfx') or sfx_map.get(typ)
@@ -103,15 +106,35 @@ def mix_audio(tl, total, outro_path, out_wav, sfx_dir):
     sf.write(out_wav, mix, SR, subtype='FLOAT')
 
 
+def disclaimer_sprite(text):
+    f = font('pop_m', 30)
+    spr, ox, oy, tw, th = text_sprite(text, f, (255, 250, 240, 255), shadow=0)
+    card, pad = rrect((tw + 56, th + 30), 30, (0, 0, 0, 150), outline=(255, 255, 255, 60), width=2)
+    paste(card, spr, pad + 28 - ox, pad + 15 - oy)
+    return card
+
+
 def render(script_path, audio_dir, out_path):
     script = json.load(open(script_path))
     pal = script.get('palette', 'ocean')
     tl, total = build_timeline(script, audio_dir)
-    bg = S.background(pal, seed=hash(script.get('id', '')) % 1000)
+    seed = sum(map(ord, script.get('id', ''))) % 1000
+    bgs = {}
+
+    def bg_for(p):
+        if p not in bgs:
+            bgs[p] = S.background(p, seed=seed)
+        return bgs[p]
+
+    show_caps = script.get('captions', True)
+    film = script.get('film', False)
     objs = []
     for i, s in enumerate(tl):
-        objs.append((s, S.make(s['spec'], s['t1'] - s['t0'], pal, i), SceneCaptions(s['spec'].get('cap', ''), s['vo0'], s['vo1'] + GAP * 0.5)))
+        sp = s['spec']
+        sp_pal = sp.get('bg') or pal
+        objs.append((s, S.make(sp, s['t1'] - s['t0'], sp_pal, i), SceneCaptions(sp.get('cap', '') if show_caps else '', s['vo0'], s['vo1'] + GAP * 0.5), sp_pal))
     wm, wox, woy, wtw, wth = text_sprite(CFG['watermark'], font('pop_m', 34), (255, 255, 255, 72), shadow=0, blur=2)
+    disc = disclaimer_sprite(CFG['disclaimer']) if CFG.get('disclaimer') else None
     tmpdir = os.path.dirname(os.path.abspath(out_path))
     body_mp4 = os.path.join(tmpdir, '_body.mp4')
     nframes = int(math.ceil(total * FPS))
@@ -122,10 +145,11 @@ def render(script_path, audio_dir, out_path):
         t = fi / FPS
         while si < len(objs) - 1 and t >= objs[si][0]['t1']:
             si += 1
-        s, sc, cap = objs[si]
-        fr = bg.copy()
+        s, sc, cap, sp_pal = objs[si]
+        P = S.PALETTES[sp_pal]
+        fr = bg_for(sp_pal).copy()
         lt = t - s['t0']
-        S.bokeh(fr, t, tuple(S.PALETTES[pal]['acc']))
+        S.bokeh(fr, t, tuple(P['acc']))
         layer = Image.new('RGBA', (W, H), (0, 0, 0, 0))
         sc.draw(layer, lt)
         z = 1.0 + 0.035 * min(1.0, lt / max(s['t1'] - s['t0'], 0.5))
@@ -133,14 +157,43 @@ def render(script_path, audio_dir, out_path):
             nw, nh = int(W * z), int(H * z)
             layer = layer.resize((nw, nh), Image.BILINEAR).crop(((nw - W) // 2, (nh - H) // 2, (nw - W) // 2 + W, (nh - H) // 2 + H))
         fr.alpha_composite(layer)
+        if film:
+            fr.alpha_composite(film_overlay())
+        sp = s['spec']
+        kw = sp.get('kw')
+        if kw:
+            vo_len = s['vo1'] - s['vo0']
+            v0 = s['vo0'] - s['t0']
+            if isinstance(kw[0], list):  # several keyword pairs timed across the VO
+                act = None
+                for e in kw:
+                    tk = v0 + vo_len * float(e[3] if len(e) > 3 else 0)
+                    if lt >= tk - 0.05 or act is None:
+                        act = (e, max(tk, 0.0))
+                e, tk = act
+                col = KW_COLS.get(e[2], KW_COLS['yellow']) if len(e) > 2 else KW_COLS['yellow']
+                keywords(fr, lt, e[0], e[1], col, tk, tk + 0.22)
+            else:
+                t_p = v0 + vo_len * float(sp.get('kw_at', 0.4))
+                col = KW_COLS.get(kw[2], KW_COLS['yellow']) if len(kw) > 2 else KW_COLS['yellow']
+                keywords(fr, lt, kw[0], kw[1], col, v0, t_p)
+        if sp.get('source'):
+            t_s = (s['vo0'] - s['t0']) + (s['vo1'] - s['vo0']) * 0.3
+            if lt >= t_s:
+                source_card(fr, sp['source'], ease(lt, t_s, 0.25))
         # paper swipe transition at scene start
         if si > 0 and lt < 0.22:
             p = lt / 0.22
             x = -W + p * W * 2.2
-            band = Image.new('RGBA', (int(W * 0.9), H), tuple(S.PALETTES[pal]['paper']) + (255,))
+            band = Image.new('RGBA', (int(W * 0.9), H), tuple(P['paper']) + (255,))
             paste(fr, band, x, 0, 1 - p * 0.3)
         cap.draw(fr, t)
+        if disc is not None and (t < 4.0 or si == len(objs) - 1):
+            k = min(1.0, t / 0.3) * (1 - ease(t, 3.6, 0.4)) if t < 4.0 else ease(lt, 0.0, 0.3)
+            paste(fr, disc, W / 2 - disc.width / 2, 1450 - disc.height / 2, k)
         paste(fr, wm, W / 2 - wtw / 2 - wox, 1530 - wth / 2 - woy)
+        if film:
+            fr.alpha_composite(grain(fi))
         ff.stdin.write(fr.convert('RGB').tobytes())
     ff.stdin.close()
     ff.wait()
@@ -165,10 +218,19 @@ def render(script_path, audio_dir, out_path):
 def thumbnail(script_path, out_jpg):
     script = json.load(open(script_path))
     pal = script.get('palette', 'ocean')
-    fr = S.background(pal).copy()
     first = script['scenes'][0]
-    sc = S.make(first, 3.0, pal, 0)
+    sp_pal = first.get('bg') or pal
+    fr = S.background(sp_pal).copy()
+    sc = S.make(first, 3.0, sp_pal, 0)
     sc.draw(fr, 1.2)
+    if script.get('film'):
+        fr.alpha_composite(film_overlay())
+    th = script.get('thumb_kw') or first.get('kw')
+    if th and isinstance(th[0], list):
+        th = th[-1]
+    if th:
+        col = KW_COLS.get(th[2], KW_COLS['yellow']) if len(th) > 2 else KW_COLS['yellow']
+        keywords(fr, 5.0, th[0], th[1], col, 0, 0)
     fr.convert('RGB').save(out_jpg, quality=92)
 
 

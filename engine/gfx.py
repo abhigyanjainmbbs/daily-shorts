@@ -18,7 +18,17 @@ PALETTES = {
     'mint':  dict(bg0=(6, 24, 20), bg1=(14, 62, 52), paper=(30, 104, 86), acc=(110, 240, 190), acc2=(255, 214, 120)),
     'plum':  dict(bg0=(20, 8, 28), bg1=(58, 20, 72), paper=(98, 40, 118), acc=(230, 130, 255), acc2=(255, 200, 110)),
     'sand':  dict(bg0=(34, 26, 16), bg1=(92, 66, 38), paper=(150, 112, 70), acc=(255, 170, 90), acc2=(255, 236, 170)),
+    # warm 'story' palettes (alternate per scene)
+    'amber': dict(bg0=(120, 70, 10), bg1=(214, 150, 40), paper=(170, 104, 24), acc=(255, 120, 60), acc2=(255, 240, 200)),
+    'teal':  dict(bg0=(6, 40, 40), bg1=(24, 110, 100), paper=(16, 80, 72), acc=(120, 255, 220), acc2=(255, 230, 150)),
+    'violet': dict(bg0=(26, 10, 52), bg1=(76, 36, 130), paper=(54, 24, 96), acc=(200, 120, 255), acc2=(255, 220, 140)),
+    'navy':  dict(bg0=(8, 14, 40), bg1=(30, 52, 120), paper=(20, 36, 86), acc=(110, 180, 255), acc2=(255, 220, 140)),
+    'crimson': dict(bg0=(40, 4, 12), bg1=(120, 20, 40), paper=(90, 14, 30), acc=(255, 90, 90), acc2=(255, 220, 160)),
+    'soil':  dict(bg0=(30, 18, 8), bg1=(92, 60, 30), paper=(70, 44, 20), acc=(200, 120, 255), acc2=(255, 220, 150)),
 }
+
+KW_COLS = {'red': (255, 72, 60), 'purple': (196, 120, 255), 'green': (150, 255, 90), 'yellow': (255, 214, 70),
+           'blue': (110, 190, 255), 'orange': (255, 140, 50), 'white': (255, 250, 240)}
 
 
 @lru_cache(maxsize=64)
@@ -26,6 +36,7 @@ def font(name, size):
     files = {
         'lora': 'Lora-Variable.ttf', 'lora_i': 'Lora-Italic-Variable.ttf',
         'pop_b': 'Poppins-Bold.ttf', 'pop_m': 'Poppins-Medium.ttf', 'emoji': 'NotoColorEmoji.ttf',
+        'osw': 'Oswald-Bold.woff', 'osw_s': 'Oswald-SemiBold.woff',
     }
     f = ImageFont.truetype(os.path.join(FONTS, files[name]), size)
     if name.startswith('lora'):
@@ -304,3 +315,74 @@ MOLS = {
     'TOXIN': [((120, 200, 40), 1.0), ((60, 90, 20), 0.85), ((120, 200, 40), 1.0)],
     'FAT': [((255, 214, 90), 1.0), ((255, 190, 60), 0.9)],
 }
+
+
+# ---------------------------------------------------------------- film look overlays
+_OV = {}
+
+
+def film_overlay():
+    """Vignette + paper crease (static)."""
+    if 'v' in _OV:
+        return _OV['v']
+    yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
+    d = np.sqrt(((xx - W * .5) / (W * .62)) ** 2 + ((yy - H * .45) / (H * .62)) ** 2)
+    a = np.clip(d - 0.35, 0, 1) ** 1.6 * 235
+    im = Image.fromarray(np.dstack([np.zeros_like(a), np.zeros_like(a), np.zeros_like(a), a]).astype(np.uint8), 'RGBA')
+    # crease: soft dark line + light highlight next to it, slightly right of centre
+    cx = int(W * 0.6)
+    cr = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+    dd = ImageDraw.Draw(cr)
+    dd.rectangle((cx - 2, 0, cx + 1, H), fill=(0, 0, 0, 70))
+    dd.rectangle((cx + 2, 0, cx + 5, H), fill=(255, 255, 255, 26))
+    cr = cr.filter(ImageFilter.GaussianBlur(2.2))
+    im.alpha_composite(cr)
+    _OV['v'] = im
+    return im
+
+
+def grain(i):
+    k = i % 4
+    if ('g', k) not in _OV:
+        rnd = np.random.RandomState(100 + k)
+        n = rnd.normal(0, 1, (H // 2, W // 2)).astype(np.float32)
+        a = np.clip(np.abs(n) * 15, 0, 40)
+        g = np.where(n > 0, 255, 0).astype(np.uint8)
+        im = Image.fromarray(np.dstack([g, g, g, a.astype(np.uint8)]), 'RGBA').resize((W, H), Image.NEAREST)
+        _OV[('g', k)] = im
+    return _OV[('g', k)]
+
+
+def keywords(fr, t, kicker, punch, col, t_k, t_p):
+    """Two-tier top-left keyword text: small white kicker + big coloured punch line."""
+    x0, y0 = 70, 210
+    if kicker and t >= t_k:
+        f = font('osw_s', 62)
+        spr, ox, oy, tw, th = text_sprite(kicker.upper(), f, (255, 250, 240, 255), stroke=2, stroke_fill=(0, 0, 0, 200),
+                                          shadow=0.9, blur=7)
+        k = ease(t, t_k, 0.12)
+        paste(fr, spr, x0 - ox + (1 - k) * -30, y0 - oy, k)
+    if punch and t >= t_p:
+        size = 118
+        f = font('osw', size)
+        d0 = ImageDraw.Draw(Image.new('RGBA', (8, 8)))
+        while d0.textlength(punch.upper(), font=f) > 940 and size > 60:
+            size -= 6
+            f = font('osw', size)
+        spr, ox, oy, tw, th = text_sprite(punch.upper(), f, tuple(col) + (255,), stroke=3, stroke_fill=(0, 0, 0, 220),
+                                          shadow=0.95, blur=10)
+        k = ease(t, t_p, 0.1)
+        s = 1 + 0.22 * (1 - ease(t, t_p, 0.16))
+        if s > 1.001:
+            spr = spr.resize((int(spr.width * s), int(spr.height * s)), Image.BILINEAR)
+            ox, oy = ox * s, oy * s
+        paste(fr, spr, x0 - ox, y0 + 78 - oy, k)
+
+
+def source_card(fr, text, k=1.0):
+    f = font('pop_m', 30)
+    spr, ox, oy, tw, th = text_sprite(text, f, (40, 30, 20, 255), shadow=0)
+    card, pad = rrect((tw + 60, th + 34), 10, (250, 240, 214, 235), outline=(120, 90, 50, 200), width=2)
+    paste(card, spr, pad + 30 - ox, pad + 17 - oy)
+    card = card.rotate(-2, expand=True, resample=Image.BICUBIC)
+    paste(fr, card, 70, 1180, k)

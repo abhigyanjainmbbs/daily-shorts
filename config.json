@@ -1,14 +1,1 @@
-{
-  "channel": "@abhigyanjainmbbs",
-  "watermark": "@abhigyanjainmbbs",
-  "voice_name": "Abhigyan",
-  "tts_models": ["eleven_v3", "eleven_multilingual_v2"],
-  "fps": 30,
-  "width": 1080,
-  "height": 1920,
-  "post_time_ist": "19:30",
-  "dm_enabled": false,
-  "dm_keyword": "NOTES",
-  "notes_base_url": "https://github.com/abhigyanjainmbbs/daily-shorts/blob/main/notes/",
-  "palettes": ["ember", "ocean", "mint", "plum", "sand"]
-}
+{"channel": "@abhigyanjainmbbs", "watermark": "@abhigyanjainmbbs", "voice_name": "Abhigyan", "tts_models": ["eleven_v3", "eleven_multilingual_v2"], "fps": 30, "width": 1080, "height": 1920, "post_time_ist": "19:30", "dm_enabled": false, "dm_keyword": "NOTES", "notes_base_url": "https://github.com/abhigyanjainmbbs/daily-shorts/blob/main/notes/", "palettes": ["ember", "ocean", "mint", "plum", "sand"], "disclaimer": "Educational content only · Not medical advice"}

@@ -1,0 +1,626 @@
+{
+ "id": "2026-11-21-tetanus",
+ "palette": "amber",
+ "captions": false,
+ "film": true,
+ "title": "Rusty nail se tetanus? Asli villain kuch aur hai 😳 #shorts",
+ "thumb_kw": [
+  "RUSTY NAIL",
+  "TETANUS?",
+  "red"
+ ],
+ "description": "Jung lagi keel se tetanus hota hai? Nahi! Asli villain hai mitti mein rehne wala Clostridium tetani — aur uska zeher tetanospasmin, duniya ke sabse potent toxins mein se ek.\n\nIs video mein MBBS-level detail: drumstick appearance, obligate anaerobe, retrograde axonal transport, GABA/glycine block, trismus, risus sardonicus, opisthotonus — aur kyun tetanus hone ke baad bhi immunity nahi milti.\n\nSources: CDC Pink Book, Chapter 21 (Tetanus); CDC Clinical Overview of Tetanus; Ananthanarayan & Paniker's Textbook of Microbiology; MoHFW Td vaccine guidelines; WHO (India MNTE validation, 2015).",
+ "hashtags": [
+  "tetanus",
+  "rustynail",
+  "mbbs",
+  "medicalfacts",
+  "microbiology",
+  "mythbusting",
+  "healthawareness",
+  "shorts",
+  "reels"
+ ],
+ "notes_md": "# Tetanus — 1-page notes\n\n- **Organism:** *Clostridium tetani* — Gram-positive, obligate anaerobe, spore-forming rod; round terminal spore = **drumstick appearance**.\n- **Habitat:** soil, dust, animal (esp. horse) faeces; manure-treated soil is rich in spores.\n- **Spores:** resist heat and usual antiseptics; may survive autoclaving at 121 °C for 10–15 min (CDC Pink Book).\n- **Entry:** deep/puncture wounds, burns, crush injuries, animal bites, dirty needles; low O2 lets spores germinate.\n- **Toxins:** tetanospasmin (neurotoxin) + tetanolysin. Minimum human lethal dose ≈ 2.5 ng/kg (≈175 ng for 70 kg).\n- **Mechanism:** retrograde axonal transport to the CNS → blocks release of inhibitory transmitters (GABA, glycine) → unopposed contraction and spasms.\n- **Incubation:** 3–21 days (avg 8). Further from the CNS = longer; shorter = more severe.\n- **Clinical:** trismus (lockjaw) first → neck stiffness, dysphagia, abdominal rigidity; risus sardonicus; opisthotonus; spasms triggered by stimuli; can fracture spine or long bones; consciousness usually preserved.\n- **Treatment:** HTIG neutralises only *unbound* toxin; wound care, supportive/ICU care. ~1 in 10 cases fatal (CDC).\n- **No immunity after disease** → vaccinate after recovery.\n- **Prevention:** toxoid vaccine. India: TT replaced by **Td**. Adults: booster every 10 years; for deep or dirty wounds, if the last dose was over 5 years ago or is unknown, see a doctor.\n- **India:** maternal & neonatal tetanus elimination validated in 2015.\n\n*Educational only — not medical advice.*",
+ "scenes": [
+  {
+   "vo": "[excited] जंग लगी कील पैर में घुसी... और सब चिल्लाए — टिटनेस हो जाएगा!",
+   "kw": [
+    [
+     "RUSTY NAIL",
+     "PAIR MEIN",
+     "orange",
+     0.0
+    ],
+    [
+     "SAB BOLE",
+     "TETANUS!",
+     "red",
+     0.55
+    ]
+   ],
+   "bg": "amber",
+   "visual": {
+    "type": "nail",
+    "rust": true
+   }
+  },
+  {
+   "vo": "[serious] पर MBBS student होने के नाते सच बताऊँ? जंग ने आज तक किसी को टिटनेस नहीं दिया।",
+   "kw": [
+    [
+     "MBBS STUDENT",
+     "SACH BATAUN?",
+     "yellow",
+     0.0
+    ],
+    [
+     "RUST?",
+     "NOT GUILTY",
+     "green",
+     0.55
+    ]
+   ],
+   "bg": "teal",
+   "visual": {
+    "type": "nail",
+    "rust": true,
+    "flakes": true,
+    "stamp": "NOT GUILTY",
+    "stamp_at": 0.6
+   },
+   "sfx": "stinger"
+  },
+  {
+   "vo": "असली मुजरिम मिट्टी में छुपा है — क्लॉस्ट्रिडियम टेटनाई।",
+   "kw": [
+    [
+     "ASLI MUJRIM",
+     "C. TETANI",
+     "purple",
+     0.0
+    ]
+   ],
+   "bg": "soil",
+   "visual": {
+    "type": "soil",
+    "count": 7
+   }
+  },
+  {
+   "vo": "मिट्टी, धूल और जानवरों के गोबर में ये भरा पड़ा है।",
+   "kw": [
+    [
+     "KAHAN MILTA HAI?",
+     "MITTI + GOBAR",
+     "orange",
+     0.0
+    ]
+   ],
+   "bg": "amber",
+   "source": "CDC Pink Book · Ch. 21",
+   "visual": {
+    "type": "soil",
+    "count": 12
+   }
+  },
+  {
+   "vo": "[curious] Microscope में ये पतली छड़ जैसा है, सिरे पर गोल spore — हम इसे कहते हैं drumstick appearance।",
+   "kw": [
+    [
+     "MICROSCOPE",
+     "PATLI CHHAD",
+     "blue",
+     0.0
+    ],
+    [
+     "MBBS NOTE",
+     "DRUMSTICK",
+     "yellow",
+     0.6
+    ]
+   ],
+   "bg": "violet",
+   "source": "Ananthanarayan & Paniker",
+   "visual": {
+    "type": "drumstick",
+    "label": "Gram-positive · terminal spore"
+   }
+  },
+  {
+   "vo": "ये spore इसका कवच है — सालों तक ज़िंदा, antiseptics बेअसर, और autoclave में एक सौ इक्कीस डिग्री पर भी दस-पंद्रह मिनट टिक सकता है।",
+   "kw": [
+    [
+     "SPORE",
+     "KAVACH",
+     "blue",
+     0.0
+    ],
+    [
+     "SAALON TAK",
+     "ZINDA",
+     "green",
+     0.2
+    ],
+    [
+     "121°C PE BHI",
+     "10–15 MIN",
+     "orange",
+     0.55
+    ]
+   ],
+   "bg": "crimson",
+   "source": "CDC Pink Book",
+   "visual": {
+    "type": "spore",
+    "mode": "boil"
+   }
+  },
+  {
+   "vo": "[whispers] पर कमज़ोरी एक है... ऑक्सीजन। ये obligate anaerobe है — हवा में जी नहीं पाता।",
+   "kw": [
+    [
+     "KAMZORI",
+     "OXYGEN",
+     "red",
+     0.0
+    ],
+    [
+     "MBBS NOTE",
+     "OBLIGATE ANAEROBE",
+     "yellow",
+     0.5
+    ]
+   ],
+   "bg": "teal",
+   "visual": {
+    "type": "spore",
+    "mode": "oxygen",
+    "label": "Obligate anaerobe"
+   }
+  },
+  {
+   "vo": "तो इसे चाहिए गहरा, बंद घाव — जहाँ हवा नहीं पहुँचती।",
+   "kw": [
+    [
+     "DEEP WOUND",
+     "NO AIR",
+     "yellow",
+     0.0
+    ]
+   ],
+   "bg": "navy",
+   "visual": {
+    "type": "wound"
+   }
+  },
+  {
+   "vo": "जंग लगी कील अक्सर मिट्टी में पड़ी होती है, और गहरा घाव करती है। जंग बस एक signal है — मिट्टी का।",
+   "kw": [
+    [
+     "RUSTY NAIL =",
+     "MITTI MEIN PADI",
+     "orange",
+     0.0
+    ],
+    [
+     "RUST =",
+     "MITTI KA SIGNAL",
+     "green",
+     0.6
+    ]
+   ],
+   "bg": "soil",
+   "visual": {
+    "type": "nail",
+    "on": "soil",
+    "rust": true
+   }
+  },
+  {
+   "vo": "और सिर्फ़ कील नहीं — जलना, जानवर का काटना, गंदी सुई, गहरी खरोंच — कोई भी घाव।",
+   "kw": [
+    [
+     "SIRF KEEL NAHI",
+     "KOI BHI GHAAV",
+     "orange",
+     0.0
+    ]
+   ],
+   "bg": "navy",
+   "visual": {
+    "type": "steps",
+    "items": [
+     "Burns & crush injuries",
+     "Animal bites",
+     "Dirty needles",
+     "Deep scratches & splinters"
+    ],
+    "icons": [
+     "🔥",
+     "🐕",
+     "💉",
+     "🌵"
+    ]
+   }
+  },
+  {
+   "vo": "अंदर spore जागता है, और छोड़ता है ज़हर — tetanospasmin।",
+   "kw": [
+    [
+     "JAAG GAYA",
+     "ZEHAR",
+     "green",
+     0.0
+    ],
+    [
+     "NAAM",
+     "TETANOSPASMIN",
+     "green",
+     0.6
+    ]
+   ],
+   "bg": "violet",
+   "visual": {
+    "type": "toxin",
+    "label": "Neurotoxin"
+   }
+  },
+  {
+   "vo": "[serious] सत्तर किलो के इंसान के लिए सिर्फ़ एक सौ पचहत्तर नैनोग्राम काफ़ी हो सकता है — एक ग्राम के दस लाखवें हिस्से से भी कम।",
+   "kw": [
+    [
+     "70 KG INSAAN",
+     "SIRF 175 NANOGRAM",
+     "red",
+     0.0
+    ],
+    [
+     "1 GRAM KA",
+     "10 LAKHVA HISSA BHI NAHI",
+     "red",
+     0.6
+    ]
+   ],
+   "bg": "crimson",
+   "source": "CDC Pink Book · 2.5 ng/kg",
+   "visual": {
+    "type": "counter",
+    "value": "175",
+    "suffix": "NANOGRAM",
+    "label": "lethal dose · 70 kg adult"
+   }
+  },
+  {
+   "vo": "ये nerve में उल्टा सफ़र करता है — retrograde axonal transport — सीधा spinal cord तक।",
+   "kw": [
+    [
+     "ULTA SAFAR",
+     "NERVE KE ANDAR",
+     "purple",
+     0.0
+    ],
+    [
+     "MBBS NOTE",
+     "RETROGRADE",
+     "yellow",
+     0.35
+    ],
+    [
+     "DESTINATION",
+     "SPINAL CORD",
+     "purple",
+     0.75
+    ]
+   ],
+   "bg": "navy",
+   "visual": {
+    "type": "nerve"
+   }
+  },
+  {
+   "vo": "वहाँ muscles के brake हैं — गाबा और glycine। Tetanospasmin यही brake काट देता है।",
+   "kw": [
+    [
+     "MUSCLE KE",
+     "BRAKE",
+     "blue",
+     0.0
+    ],
+    [
+     "GABA +",
+     "GLYCINE",
+     "blue",
+     0.25
+    ],
+    [
+     "BRAKE",
+     "FAIL",
+     "red",
+     0.65
+    ]
+   ],
+   "bg": "teal",
+   "visual": {
+    "type": "versus",
+    "y": 540,
+    "left_title": "Brake",
+    "left_text": "GABA & glycine release blocked",
+    "right_title": "Only 'contract'",
+    "right_text": "Muscles never get the signal to relax"
+   }
+  },
+  {
+   "vo": "[serious] पहले जबड़ा जकड़ता है — trismus, यानी lockjaw। फिर जमी हुई मुस्कान — risus sardonicus — और पीठ धनुष जैसी मुड़ती है — opisthotonus।",
+   "kw": [
+    [
+     "PEHLA SIGN",
+     "LOCKJAW",
+     "red",
+     0.0
+    ],
+    [
+     "JAMI MUSKAAN",
+     "RISUS SARDONICUS",
+     "yellow",
+     0.4
+    ],
+    [
+     "DHANUSH JAISI PEETH",
+     "OPISTHOTONUS",
+     "yellow",
+     0.72
+    ]
+   ],
+   "bg": "crimson",
+   "visual": {
+    "type": "spasm",
+    "zones": [
+     "jaw",
+     "neck",
+     "back",
+     "belly"
+    ]
+   }
+  },
+  {
+   "vo": "[whispers] और मरीज़ पूरे होश में रहता है। हल्की आवाज़ या छुअन से spasm — इतना तेज़ कि हड्डी टूट सकती है।",
+   "kw": [
+    [
+     "MAREEZ",
+     "PURE HOSH MEIN",
+     "red",
+     0.0
+    ],
+    [
+     "AAWAAZ / CHHUAN",
+     "SPASM",
+     "orange",
+     0.4
+    ],
+    [
+     "ITNA TEZ",
+     "HADDI TOOT JAAYE",
+     "red",
+     0.72
+    ]
+   ],
+   "bg": "violet",
+   "source": "CDC Pink Book",
+   "visual": {
+    "type": "spasm",
+    "zones": [
+     "jaw",
+     "back",
+     "arms",
+     "legs"
+    ]
+   }
+  },
+  {
+   "vo": "Antitoxin, यानी TIG, सिर्फ़ खुले ज़हर को पकड़ता है — nerve से चिपका ज़हर नहीं हटता।",
+   "kw": [
+    [
+     "ANTITOXIN",
+     "TIG",
+     "blue",
+     0.0
+    ],
+    [
+     "LIMIT",
+     "SIRF FREE ZEHAR",
+     "red",
+     0.45
+    ]
+   ],
+   "bg": "navy",
+   "visual": {
+    "type": "antibody"
+   }
+  },
+  {
+   "vo": "नए nerve endings उगने में हफ़्ते लगते हैं — और इलाज के बाद भी, लगभग दस में से एक की जान चली जाती है।",
+   "kw": [
+    [
+     "RECOVERY",
+     "HAFTON ICU",
+     "blue",
+     0.0
+    ],
+    [
+     "ILAAJ KE BAAD BHI",
+     "10 MEIN 1",
+     "red",
+     0.55
+    ]
+   ],
+   "bg": "crimson",
+   "source": "CDC",
+   "visual": {
+    "type": "counter",
+    "value": "1/10",
+    "suffix": "CASES FATAL"
+   }
+  },
+  {
+   "vo": "[curious] Twist — ठीक होने के बाद भी immunity नहीं मिलती! ज़हर इतना कम होता है कि body उसे पहचान ही नहीं पाती।",
+   "kw": [
+    [
+     "TWIST",
+     "NO IMMUNITY",
+     "purple",
+     0.0
+    ],
+    [
+     "KYUN?",
+     "ZEHAR BAHUT KAM",
+     "purple",
+     0.55
+    ]
+   ],
+   "bg": "violet",
+   "source": "CDC Pink Book",
+   "visual": {
+    "type": "title",
+    "title": "No immunity",
+    "sub": "even after recovery",
+    "emoji": "🔁"
+   }
+  },
+  {
+   "vo": "बचाव — vaccine। उसी ज़हर का बेअसर रूप, toxoid — body बिना बीमार हुए लड़ना सीख जाती है।",
+   "kw": [
+    [
+     "BACHAAV",
+     "VACCINE",
+     "blue",
+     0.0
+    ],
+    [
+     "BEASAR ZEHAR",
+     "TOXOID",
+     "green",
+     0.3
+    ]
+   ],
+   "bg": "teal",
+   "visual": {
+    "type": "antibody",
+    "syringe": true
+   }
+  },
+  {
+   "vo": "India में अब टी-टी की जगह टी-डी लगता है — साथ में diphtheria से भी सुरक्षा। और इसी vaccination से India ने नवजात टिटनेस eliminate किया।",
+   "kw": [
+    [
+     "AB TT NAHI",
+     "Td VACCINE",
+     "orange",
+     0.0
+    ],
+    [
+     "BONUS",
+     "DIPHTHERIA BHI",
+     "green",
+     0.3
+    ],
+    [
+     "INDIA 2015",
+     "NEWBORN TETANUS ELIMINATED",
+     "green",
+     0.62
+    ]
+   ],
+   "bg": "amber",
+   "source": "MoHFW · WHO (2015)",
+   "visual": {
+    "type": "versus",
+    "y": 540,
+    "left_title": "Old: TT",
+    "left_text": "Tetanus toxoid only",
+    "right_title": "Now: Td",
+    "right_text": "Tetanus + adult diphtheria"
+   }
+  },
+  {
+   "vo": "चोट लगे तो — साबुन-पानी से घाव धोओ। Booster हर दस साल। और घाव गहरा या गंदा है, और आख़िरी shot पाँच साल से पुराना है या याद नहीं — तो उसी दिन doctor के पास।",
+   "kw": [
+    [
+     "STEP 1",
+     "SABUN + PAANI",
+     "green",
+     0.0
+    ],
+    [
+     "STEP 2",
+     "HAR 10 SAAL",
+     "blue",
+     0.22
+    ],
+    [
+     "DEEP WOUND +",
+     "5 SAAL RULE",
+     "red",
+     0.45
+    ]
+   ],
+   "bg": "navy",
+   "source": "CDC wound guidance",
+   "visual": {
+    "type": "steps",
+    "items": [
+     "Wash with soap & clean water",
+     "Td booster every 10 years",
+     "Deep/dirty wound + last dose 5+ yrs ago → doctor today"
+    ],
+    "icons": [
+     "🧼",
+     "💉",
+     "🩺"
+    ]
+   }
+  },
+  {
+   "vo": "तो याद रखना — डर जंग से नहीं... मिट्टी से है।",
+   "kw": [
+    [
+     "NOT THE RUST",
+     "MITTI SE DARO",
+     "yellow",
+     0.0
+    ]
+   ],
+   "bg": "soil",
+   "visual": {
+    "type": "nail",
+    "on": "soil",
+    "rust": true
+   }
+  }
+ ],
+ "cta_plain": {
+  "vo": "ये video सिर्फ़ educational है, medical advice नहीं — चोट लगे तो doctor से मिलो। और comment करो — अगला कौन सा myth तोड़ूँ?",
+  "kw": [
+   [
+    "EDUCATIONAL ONLY",
+    "NOT MEDICAL ADVICE",
+    "white",
+    0.0
+   ],
+   [
+    "COMMENT KARO",
+    "AGLA MYTH?",
+    "yellow",
+    0.55
+   ]
+  ],
+  "bg": "amber",
+  "visual": {
+   "type": "title",
+   "title": "Next myth?",
+   "emoji": "💬"
+  },
+  "hold": 0.4
+ },
+ "cta_dm": null
+}
