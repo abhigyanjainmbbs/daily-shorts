@@ -346,7 +346,7 @@ def grain(i):
     if ('g', k) not in _OV:
         rnd = np.random.RandomState(100 + k)
         n = rnd.normal(0, 1, (H // 2, W // 2)).astype(np.float32)
-        a = np.clip(np.abs(n) * 15, 0, 40)
+        a = np.clip(np.abs(n) * 7, 0, 16)
         g = np.where(n > 0, 255, 0).astype(np.uint8)
         im = Image.fromarray(np.dstack([g, g, g, a.astype(np.uint8)]), 'RGBA').resize((W, H), Image.NEAREST)
         _OV[('g', k)] = im

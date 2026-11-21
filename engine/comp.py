@@ -206,7 +206,7 @@ class FX:
         typ = s['type']
         f = self.f(t)
         t0 = s.get('t', 0.0)
-        if f < t0 and typ not in ('steam', 'bubbles', 'boil', 'glow'):
+        if f < t0 and ('t' in s or typ not in ('steam', 'bubbles', 'boil', 'glow')):
             return
         if 'until' in s and f > s['until']:
             return

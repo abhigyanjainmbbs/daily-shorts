@@ -232,7 +232,7 @@ def render(script_path, audio_dir, out_path):
     body_mp4 = os.path.join(tmpdir, '_body.mp4')
     nframes = int(math.ceil(total * FPS))
     ff = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
-                           '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20', '-pix_fmt', 'yuv420p', body_mp4], stdin=subprocess.PIPE)
+                           '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '17', '-pix_fmt', 'yuv420p', body_mp4], stdin=subprocess.PIPE)
     for fi in range(nframes):
         ff.stdin.write(frame(fi).tobytes())
     ff.stdin.close()
@@ -244,7 +244,7 @@ def render(script_path, audio_dir, out_path):
     cmd = ['ffmpeg', '-v', 'error', '-y', '-i', body_mp4, '-i', outro, '-i', wav, '-filter_complex',
            f'[0:v]fps={FPS},format=yuv420p[a];[1:v]scale={W}:{H},fps={FPS},format=yuv420p[b];[a][b]concat=n=2:v=1:a=0[v];'
            f'[2:a]loudnorm=I=-14:TP=-1.5:LRA=11[au]',
-           '-map', '[v]', '-map', '[au]', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '21', '-c:a', 'aac', '-b:a', '160k',
+           '-map', '[v]', '-map', '[au]', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '24', '-maxrate', '9M', '-bufsize', '18M', '-c:a', 'aac', '-b:a', '160k',
            '-ar', '44100', '-movflags', '+faststart', '-shortest', out_path]
     subprocess.run(cmd, check=True)
     for p in (body_mp4, wav):
