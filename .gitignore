@@ -1,4 +1,4 @@
-*.mp4
 *.wav
 __pycache__/
 out/
+!media/**/*.mp4
