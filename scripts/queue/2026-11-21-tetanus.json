@@ -24,7 +24,7 @@
  "notes_md": "# Tetanus — 1-page notes\n\n- **Organism:** *Clostridium tetani* — Gram-positive, obligate anaerobe, spore-forming rod; round terminal spore = **drumstick appearance**.\n- **Habitat:** soil, dust, animal (esp. horse) faeces; manure-treated soil is rich in spores.\n- **Spores:** resist heat and usual antiseptics; may survive autoclaving at 121 °C for 10–15 min (CDC Pink Book).\n- **Entry:** deep/puncture wounds, burns, crush injuries, animal bites, dirty needles; low O2 lets spores germinate.\n- **Toxins:** tetanospasmin (neurotoxin) + tetanolysin. Minimum human lethal dose ≈ 2.5 ng/kg (≈175 ng for 70 kg).\n- **Mechanism:** retrograde axonal transport to the CNS → blocks release of inhibitory transmitters (GABA, glycine) → unopposed contraction and spasms.\n- **Incubation:** 3–21 days (avg 8). Further from the CNS = longer; shorter = more severe.\n- **Clinical:** trismus (lockjaw) first → neck stiffness, dysphagia, abdominal rigidity; risus sardonicus; opisthotonus; spasms triggered by stimuli; can fracture spine or long bones; consciousness usually preserved.\n- **Treatment:** HTIG neutralises only *unbound* toxin; wound care, supportive/ICU care. ~1 in 10 cases fatal (CDC).\n- **No immunity after disease** → vaccinate after recovery.\n- **Prevention:** toxoid vaccine. India: TT replaced by **Td**. Adults: booster every 10 years; for deep or dirty wounds, if the last dose was over 5 years ago or is unknown, see a doctor.\n- **India:** maternal & neonatal tetanus elimination validated in 2015.\n\n*Educational only — not medical advice.*",
  "scenes": [
   {
-   "vo": "[excited] जंग लगी कील पैर में घुसी... और सब चिल्लाए — टिटनेस हो जाएगा!",
+   "vo": "[tense] जंग लगी कील पैर में घुसी... और सब चिल्लाए — टिटनेस हो जाएगा!",
    "kw": [
     [
      "RUSTY NAIL",
@@ -202,7 +202,7 @@
    }
   },
   {
-   "vo": "असली मुजरिम मिट्टी में छुपा है — क्लॉस्ट्रिडियम टेटनाई।",
+   "vo": "[intrigued] असली मुजरिम मिट्टी में छुपा है — एक bacteria, क्लॉस्ट्रिडियम टेटनाई।",
    "kw": [
     [
      "ASLI MUJRIM",
@@ -490,7 +490,7 @@
    }
   },
   {
-   "vo": "[curious] Microscope में ये पतली छड़ जैसा है, सिरे पर गोल spore — हम इसे कहते हैं drumstick appearance।",
+   "vo": "[explaining] Microscope में ये पतली छड़ जैसा है, सिरे पर गोल spore — हम इसे कहते हैं drumstick appearance।",
    "kw": [
     [
      "MICROSCOPE",
@@ -556,7 +556,7 @@
    }
   },
   {
-   "vo": "ये spore इसका कवच है — सालों तक ज़िंदा, antiseptics बेअसर, और autoclave में एक सौ इक्कीस डिग्री पर भी दस-पंद्रह मिनट टिक सकता है।",
+   "vo": "ये spore इसका कवच है — मिट्टी में सालों ज़िंदा, और autoclave में एक सौ इक्कीस डिग्री पर भी दस-पंद्रह मिनट टिक सकता है।",
    "kw": [
     [
      "SPORE",
@@ -693,7 +693,7 @@
    "sfx": "riser"
   },
   {
-   "vo": "[whispers] पर कमज़ोरी एक है... ऑक्सीजन। ये obligate anaerobe है — हवा में जी नहीं पाता।",
+   "vo": "[serious] पर इसकी एक कमज़ोरी है... ऑक्सीजन। ये obligate anaerobe है — हवा में जी नहीं पाता।",
    "kw": [
     [
      "KAMZORI",
@@ -837,7 +837,7 @@
    }
   },
   {
-   "vo": "जंग लगी कील अक्सर मिट्टी में पड़ी होती है, और गहरा घाव करती है। जंग बस एक signal है — मिट्टी का।",
+   "vo": "जंग लगी कील अक्सर मिट्टी में पड़ी होती है, और गहरा घाव करती है। जंग बस मिट्टी का signal है।",
    "kw": [
     [
      "RUSTY NAIL =",
@@ -981,13 +981,19 @@
    }
   },
   {
-   "vo": "और सिर्फ़ कील नहीं — जलना, जानवर का काटना, गंदी सुई, गहरी खरोंच — कोई भी घाव।",
+   "vo": "और सिर्फ़ कील नहीं — जानवर का काटना, गंदी सुई, गहरी खरोंच — कोई भी घाव।",
    "kw": [
     [
      "SIRF KEEL NAHI",
      "KOI BHI GHAAV",
      "orange",
      0.0
+    ],
+    [
+     "JAANWAR / SUI",
+     "KHARONCH",
+     "red",
+     0.3
     ]
    ],
    "bg": "navy",
@@ -1103,7 +1109,7 @@
    }
   },
   {
-   "vo": "अंदर spore जागता है, और छोड़ता है ज़हर — tetanospasmin।",
+   "vo": "[tense] अंदर spore जागता है, और छोड़ता है ज़हर — tetanospasmin।",
    "kw": [
     [
      "JAAG GAYA",
@@ -1211,7 +1217,7 @@
    "sfx": "riser"
   },
   {
-   "vo": "[serious] सत्तर किलो के इंसान के लिए सिर्फ़ एक सौ पचहत्तर नैनोग्राम काफ़ी हो सकता है — एक ग्राम के दस लाखवें हिस्से से भी कम।",
+   "vo": "[grave] सत्तर किलो के इंसान के लिए सिर्फ़ एक सौ पचहत्तर नैनोग्राम काफ़ी हो सकता है — एक ग्राम के दस लाखवें हिस्से से भी कम।",
    "kw": [
     [
      "70 KG INSAAN",
@@ -1296,7 +1302,7 @@
    }
   },
   {
-   "vo": "ये nerve में उल्टा सफ़र करता है — retrograde axonal transport — सीधा spinal cord तक।",
+   "vo": "[explaining] ये nerve में उल्टा सफ़र करता है — retrograde axonal transport — सीधा spinal cord तक।",
    "kw": [
     [
      "ULTA SAFAR",
@@ -1552,7 +1558,7 @@
    }
   },
   {
-   "vo": "[whispers] और मरीज़ पूरे होश में रहता है। हल्की आवाज़ या छुअन से spasm — इतना तेज़ कि हड्डी टूट सकती है।",
+   "vo": "[grave] और मरीज़ पूरे होश में रहता है। हल्की आवाज़ या छुअन से spasm — इतना तेज़ कि हड्डी टूट सकती है।",
    "kw": [
     [
      "MAREEZ",
@@ -1626,7 +1632,7 @@
    "sfx": "heartbeat"
   },
   {
-   "vo": "Antitoxin, यानी TIG, सिर्फ़ खुले ज़हर को पकड़ता है — nerve से चिपका ज़हर नहीं हटता।",
+   "vo": "[explaining] Antitoxin, यानी TIG — tetanus immune globulin — सिर्फ़ खुले ज़हर को पकड़ता है। Nerve से चिपका ज़हर नहीं हटता।",
    "kw": [
     [
      "ANTITOXIN",
@@ -1635,10 +1641,16 @@
      0.0
     ],
     [
+     "TIG =",
+     "TETANUS IMMUNE GLOBULIN",
+     "blue",
+     0.22
+    ],
+    [
      "LIMIT",
      "SIRF FREE ZEHAR",
      "red",
-     0.45
+     0.62
     ]
    ],
    "bg": "navy",
@@ -1763,7 +1775,7 @@
    }
   },
   {
-   "vo": "और इलाज के बाद भी, लगभग दस में से एक मरीज़ की जान चली जाती है।",
+   "vo": "[grave] इलाज के बाद भी, लगभग दस में से एक मरीज़ की जान चली जाती है।",
    "kw": [
     [
      "ILAAJ KE BAAD BHI",
@@ -1805,7 +1817,7 @@
    "sfx": "heartbeat"
   },
   {
-   "vo": "[curious] Twist — ठीक होने के बाद भी immunity नहीं मिलती! ज़हर इतना कम होता है कि body उसे पहचान ही नहीं पाती।",
+   "vo": "[intrigued] और twist — ठीक होने के बाद भी immunity नहीं मिलती! ज़हर इतना कम होता है कि body उसे पहचान ही नहीं पाती।",
    "kw": [
     [
      "TWIST",
@@ -1817,7 +1829,7 @@
      "KYUN?",
      "ZEHAR BAHUT KAM",
      "purple",
-     0.55
+     0.5
     ]
    ],
    "bg": "violet",
@@ -1904,19 +1916,19 @@
    }
   },
   {
-   "vo": "बचाव — vaccine। उसी ज़हर का बेअसर रूप, toxoid — body बिना बीमार हुए लड़ना सीख जाती है।",
+   "vo": "[hopeful] पर बचना आसान है — vaccine। उसी ज़हर का बेअसर रूप, toxoid — body बिना बीमार हुए लड़ना सीख जाती है।",
    "kw": [
     [
-     "BACHAAV",
-     "VACCINE",
-     "blue",
+     "PAR BACHNA",
+     "AASAN HAI",
+     "green",
      0.0
     ],
     [
-     "BEASAR ZEHAR",
+     "VACCINE =",
      "TOXOID",
-     "green",
-     0.3
+     "blue",
+     0.4
     ]
    ],
    "bg": "teal",
@@ -2066,7 +2078,7 @@
    }
   },
   {
-   "vo": "और India में अब टी-टी की जगह टी-डी लगता है — साथ में diphtheria से भी सुरक्षा।",
+   "vo": "[confident] India में अब टी-टी की जगह टी-डी लगता है — tetanus और diphtheria, दोनों से सुरक्षा।",
    "kw": [
     [
      "AB TT NAHI",
@@ -2075,10 +2087,10 @@
      0.0
     ],
     [
-     "BONUS",
-     "DIPHTHERIA BHI",
+     "Td =",
+     "TETANUS + DIPHTHERIA",
      "green",
-     0.5
+     0.45
     ]
    ],
    "bg": "amber",
@@ -2176,7 +2188,7 @@
    }
   },
   {
-   "vo": "चोट लगे तो — साबुन-पानी से घाव धोओ। Booster हर दस साल। और घाव गहरा या गंदा है, और आख़िरी shot पाँच साल से पुराना है या याद नहीं — तो उसी दिन doctor के पास।",
+   "vo": "[firm] चोट लगे तो — साबुन और साफ़ पानी से घाव धोओ। हर दस साल booster। और घाव गहरा या गंदा है, और आख़िरी shot पाँच साल से पुराना है या याद नहीं — तो उसी दिन doctor के पास।",
    "kw": [
     [
      "STEP 1",
@@ -2335,7 +2347,7 @@
    }
   },
   {
-   "vo": "तो अगली बार कोई बोले कि जंग से टिटनेस होता है — बस इतना बोलना: जंग नहीं भाई, क्लॉस्ट्रिडियम टेटनाई। और ये video उसी को भेज देना।",
+   "vo": "[warm] तो अगली बार कोई बोले जंग से टिटनेस होता है — बस बोलना: जंग नहीं भाई, क्लॉस्ट्रिडियम टेटनाई। और ये video उसी को भेज दो।",
    "kw": [
     [
      "NEXT TIME BOLNA",
@@ -2408,7 +2420,7 @@
   }
  ],
  "cta_plain": {
-  "vo": "Comment में लिखो TETANUS — मैं DM में भेजूँगा free one-page notes। और याद रहे, ये video सिर्फ़ educational है, medical advice नहीं।",
+  "vo": "Comment में लिखो TETANUS — मैं DM में free notes भेजूँगा। और याद रहे, ये video सिर्फ़ educational है, medical advice नहीं।",
   "kw": [
    [
     "COMMENT KARO",
@@ -2470,6 +2482,5 @@
    "sub": "free 1-page notes in your DM"
   }
  },
- "cta_dm": null,
- "vo_speed": 1.1
+ "cta_dm": null
 }

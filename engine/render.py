@@ -157,7 +157,7 @@ def composer(script_path, audio_dir):
         sp = s['spec']
         sp_pal = sp.get('bg') or pal
         objs.append((s, S.make(sp, s['t1'] - s['t0'], sp_pal, i), SceneCaptions(sp.get('cap', '') if show_caps else '', s['vo0'], s['vo1'] + GAP * 0.5), sp_pal))
-    wm, wox, woy, wtw, wth = text_sprite(CFG['watermark'], font('pop_m', 34), (255, 255, 255, 72), shadow=0, blur=2)
+    wm, wox, woy, wtw, wth = text_sprite(CFG['watermark'], font('pop_m', 36), (255, 255, 255, 128), shadow=0.5, blur=4)
     disc = disclaimer_sprite(CFG['disclaimer']) if CFG.get('disclaimer') else None
     def frame(fi):
         t = fi / FPS
@@ -217,8 +217,8 @@ def composer(script_path, audio_dir):
         cap.draw(fr, t)
         if disc is not None and (t < 4.0 or si == len(objs) - 1):
             k = min(1.0, t / 0.3) * (1 - ease(t, 3.6, 0.4)) if t < 4.0 else ease(lt, 0.0, 0.3)
-            paste(fr, disc, W / 2 - disc.width / 2, 1450 - disc.height / 2, k)
-        paste(fr, wm, W / 2 - wtw / 2 - wox, 1530 - wth / 2 - woy)
+            paste(fr, disc, W / 2 - disc.width / 2, 1545 - disc.height / 2, k)
+        paste(fr, wm, W / 2 - wtw / 2 - wox, 1440 - wth / 2 - woy)
         if film:
             fr.alpha_composite(grain(fi))
         return fr.convert('RGB')
