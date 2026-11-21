@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Pop;src:url(Poppins-Medium.ttf);font-weight:500}
+@font-face{font-family:Pop;src:url(Poppins-Bold.ttf);font-weight:700}
+@font-face{font-family:Lora;src:url(Lora-Variable.ttf)}
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+body{margin:0;font-family:Pop,sans-serif;font-weight:500;color:#1d1b22;font-size:10.6pt;line-height:1.42}
+.page{width:210mm;height:297mm;padding:13mm 14mm 12mm;position:relative;page-break-after:always;background:#fbf7ef;overflow:hidden}
+.page:last-child{page-break-after:auto}
+.hd{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #2b2a6b;padding-bottom:5px;margin-bottom:9px;font-size:8.6pt;color:#2b2a6b}
+.hd b{font-weight:700}
+.ft{position:absolute;bottom:7mm;left:14mm;right:14mm;font-size:7.6pt;color:#6d6560;display:flex;justify-content:space-between;border-top:1px solid #d9cfbf;padding-top:4px}
+h1{font-size:27pt;line-height:1.05;margin:2px 0 4px;color:#2b2a6b;font-weight:700}
+h2{font-size:14.5pt;margin:10px 0 5px;color:#b3261e;font-weight:700}
+h3{font-size:11.2pt;margin:8px 0 3px;color:#2b2a6b;font-weight:700}
+p{margin:3px 0 5px}
+ul{margin:2px 0 6px;padding-left:16px} li{margin:1.5px 0}
+.sub{font-family:Lora,serif;font-style:italic;font-size:11.5pt;color:#4a4458}
+.box{border-radius:10px;padding:8px 11px;margin:7px 0}
+.myth{background:#fde7e4;border:1.5px solid #e2766b}
+.fact{background:#e5f4e7;border:1.5px solid #6db37a}
+.info{background:#e8ecfb;border:1.5px solid #7d8bd6}
+.warn{background:#fff3d6;border:1.5px solid #e0a52a}
+.exam{background:#f1e6fb;border:1.5px dashed #8b5cc4}
+.tag{display:inline-block;font-size:7.8pt;font-weight:700;letter-spacing:.06em;color:#fff;background:#8b5cc4;border-radius:4px;padding:1px 6px;margin-right:5px;vertical-align:middle}
+.tag.r{background:#b3261e}.tag.g{background:#2f8f46}.tag.b{background:#2b2a6b}.tag.o{background:#c27c0e}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fig{text-align:center;margin:6px 0}
+.fig img{max-width:100%;border-radius:8px;border:1px solid #d9cfbf}
+.cap{font-size:8pt;color:#6d6560;margin-top:2px}
+table{border-collapse:collapse;width:100%;font-size:9.2pt;margin:5px 0}
+th,td{border:1px solid #cbbfa9;padding:4px 6px;text-align:left;vertical-align:top}
+th{background:#2b2a6b;color:#fff;font-weight:700}
+tr:nth-child(even) td{background:#f4eee2}
+.big{font-size:12pt;font-weight:700}
+.step{display:flex;gap:9px;align-items:flex-start;margin:6px 0}
+.n{flex:0 0 26px;height:26px;border-radius:50%;background:#2f8f46;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.red .n{background:#b3261e}
+.kv b{color:#2b2a6b}
+.small{font-size:8.6pt;color:#4a4458}
+</style></head><body>
+
+<!-- PAGE 1 -->
+<div class="page">
+ <div class="hd"><span><b>@abhigyanjainmbbs</b> · Free notes</span><span>Abhigyan Jain · MBBS student</span></div>
+ <div class="sub">Rusty nail से tetanus? Complete notes: for everyone + MBBS exam level</div>
+ <h1>TETANUS<br><span style="font-size:15pt;color:#b3261e">Not the rust. The soil.</span></h1>
+ <div class="two">
+  <div>
+   <div class="box myth"><span class="tag r">MYTH</span><b>Rust (जंग) causes tetanus.</b>
+    <p>Rust has never given anyone tetanus. Iron oxide is harmless.</p></div>
+   <div class="box fact"><span class="tag g">FACT</span><b>The cause is a soil bacterium: <i>Clostridium tetani</i>.</b>
+    <p>A rusty nail is just a warning sign: it has usually been lying outdoors in soil or dust, and it makes a <b>deep, narrow, airless</b> wound, which is exactly what the bacterium needs.</p></div>
+  </div>
+  <div class="fig"><img src="nail.jpg" style="height:72mm;object-fit:cover;width:100%"><div class="cap">Rust is only a signal. The danger is the soil on the nail.</div></div>
+ </div>
+ <h2>Tetanus in 30 seconds</h2>
+ <ul>
+  <li><b>Organism:</b> <i>Clostridium tetani</i>, a Gram-positive, spore-forming, <b>obligate anaerobe</b> (cannot grow in oxygen).</li>
+  <li><b>Lives in:</b> soil, dust and animal (especially horse) and human faeces; manure-treated soil is rich in spores.</li>
+  <li><b>Enters through:</b> any break in the skin: puncture wounds (nails, thorns, splinters), burns, crush injuries, animal bites, dirty needles/injections, even trivial scratches. In ~30% of cases no obvious wound is remembered.</li>
+  <li><b>Disease is caused by its toxin</b> (tetanospasmin), not by the bacteria spreading through the body.</li>
+  <li><b>Toxin travels up nerves</b> to the spinal cord and switches off the "brakes" of muscles → <b>lockjaw, stiffness, painful spasms</b>, with the patient fully conscious.</li>
+  <li><b>About 1 in 10 patients die</b> even with modern intensive care (CDC).</li>
+  <li><b>Getting tetanus does NOT make you immune.</b> Only the vaccine (tetanus toxoid) protects.</li>
+  <li><b>Not contagious:</b> it does not spread from person to person.</li>
+ </ul>
+ <div class="box warn"><span class="tag o">IF YOU ARE INJURED</span>Wash the wound with soap and clean running water. If the wound is <b>deep or dirty</b> and your last tetanus shot was <b>more than 5 years ago or you don't remember</b>, see a doctor <b>the same day</b>. Everyone needs a booster every 10 years. Full steps on page 6.</div>
+ <div class="ft"><span>Educational content only · Not medical advice · If you are injured or unwell, see a doctor.</span><span>1 / 6</span></div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+ <div class="hd"><span><b>Tetanus notes</b> · Microbiology</span><span>Abhigyan Jain · MBBS student</span></div>
+ <h2 style="margin-top:2px">1. The organism: <i>Clostridium tetani</i></h2>
+ <div class="two">
+  <div class="fig"><img src="d1.jpg"><div class="cap">Hand-drawn revision diagram: drumstick appearance.</div></div>
+  <div>
+   <h3>Morphology</h3>
+   <ul>
+    <li>Gram-positive, slender bacillus (older cultures may stain Gram-variable).</li>
+    <li><b>Round, terminal spore</b> wider than the bacillus → <b>"drumstick" / "tennis-racket" appearance</b>.</li>
+    <li>Motile with <b>peritrichous flagella</b>; non-capsulated.</li>
+    <li><b>Obligate anaerobe.</b></li>
+   </ul>
+   <h3>Culture <span class="small">(Ananthanarayan & Paniker)</span></h3>
+   <ul>
+    <li>Grows anaerobically; <b>Robertson's cooked meat (RCM) medium</b> is commonly used.</li>
+    <li><b>Swarming growth on blood agar</b> (motile organism).</li>
+   </ul>
+   <h3>Resistance of spores</h3>
+   <ul>
+    <li>Survive for <b>years in soil</b>; resistant to drying, heat and many routine antiseptics.</li>
+    <li>Some spores survive <b>boiling</b>, and even <b>autoclaving at 121 °C for 10–15 minutes</b> (CDC Pink Book).</li>
+    <li>The vegetative bacterium, however, is killed by oxygen.</li>
+   </ul>
+  </div>
+ </div>
+ <h2>2. Toxins</h2>
+ <table>
+  <tr><th style="width:24%">Toxin</th><th>Key points</th></tr>
+  <tr><td><b>Tetanospasmin</b><br><span class="small">(neurotoxin)</span></td><td>Causes the disease. <b>Plasmid-encoded</b>, heat-labile protein made of a heavy and a light chain. The <b>light chain is a zinc-dependent metalloprotease</b> that cleaves <b>synaptobrevin (VAMP)</b>, stopping release of inhibitory neurotransmitters. One of the most potent toxins known: estimated minimum human lethal dose ≈ <b>2.5 ng/kg</b>, i.e. about <b>175 ng</b> for a 70 kg adult (CDC Pink Book).</td></tr>
+  <tr><td><b>Tetanolysin</b><br><span class="small">(haemolysin)</span></td><td>Oxygen-labile haemolysin; its role in disease is unclear.</td></tr>
+ </table>
+ <div class="box exam"><span class="tag">EXAM NOTE</span><b>Why can a nanogram-level dose kill, yet give no immunity?</b> The lethal amount of toxin is far smaller than the amount needed to stimulate an antibody response, so <b>recovery from tetanus does not give immunity</b>. Vaccinate every patient after recovery.</div>
+ <div class="ft"><span>Educational content only · Not medical advice</span><span>2 / 6</span></div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page">
+ <div class="hd"><span><b>Tetanus notes</b> · Pathogenesis</span><span>Abhigyan Jain · MBBS student</span></div>
+ <h2 style="margin-top:2px">3. Pathogenesis: how a small wound becomes a whole-body disease</h2>
+ <div class="fig"><img src="d2.jpg" style="max-height:112mm"><div class="cap">Toxin travels backwards along the nerve and blocks the inhibitory "brakes" in the spinal cord.</div></div>
+ <ol style="padding-left:18px;margin-top:4px">
+  <li><b>Entry:</b> spores enter a wound with dead tissue, dirt or a foreign body (low oxygen, low redox potential).</li>
+  <li><b>Germination:</b> spores turn into vegetative bacteria, which stay <b>local</b> (non-invasive) and release tetanospasmin.</li>
+  <li><b>Binding and transport:</b> toxin binds to peripheral motor nerve terminals and travels by <b>retrograde axonal transport</b> to the spinal cord and brainstem.</li>
+  <li><b>Trans-synaptic spread</b> into <b>inhibitory interneurons</b> (e.g. Renshaw cells).</li>
+  <li><b>Block:</b> the light chain cleaves synaptobrevin, so <b>GABA and glycine are not released</b>.</li>
+  <li><b>Result:</b> motor neurons fire unopposed → <b>rigidity and spasms</b>; sympathetic overactivity → <b>autonomic instability</b>.</li>
+  <li><b>Binding is irreversible:</b> recovery needs growth of new nerve terminals, so spasms last weeks and full recovery takes months.</li>
+ </ol>
+ <div class="two">
+  <div class="box info"><span class="tag b">INCUBATION</span>Usually <b>3–21 days</b> (average about 8 days). The farther the wound from the CNS, the longer it takes. <b>A shorter incubation period means more severe disease and a higher death rate.</b></div>
+  <div class="box exam"><span class="tag">EXAM NOTE</span>Same family, opposite effect: <b>botulinum toxin</b> blocks acetylcholine release at the neuromuscular junction → <b>flaccid</b> paralysis. <b>Tetanus toxin</b> blocks GABA/glycine in the CNS → <b>spastic</b> paralysis.</div>
+ </div>
+ <div class="ft"><span>Educational content only · Not medical advice</span><span>3 / 6</span></div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page">
+ <div class="hd"><span><b>Tetanus notes</b> · Clinical features and diagnosis</span><span>Abhigyan Jain · MBBS student</span></div>
+ <h2 style="margin-top:2px">4. Clinical features</h2>
+ <div class="fig"><img src="d3.jpg" style="max-height:68mm"><div class="cap">The three classic signs: trismus, risus sardonicus, opisthotonus.</div></div>
+ <h3>Generalized tetanus <span class="small">(most common, about 80% of cases): a descending pattern</span></h3>
+ <ul>
+  <li><b>Trismus (lockjaw)</b> is often the first sign: spasm of the masseter.</li>
+  <li><b>Risus sardonicus:</b> fixed "sardonic grin" from facial muscle spasm.</li>
+  <li>Neck stiffness, <b>difficulty swallowing</b>, board-like abdominal rigidity.</li>
+  <li><b>Opisthotonus:</b> back arched backwards from spasm of the back muscles.</li>
+  <li><b>Generalized spasms</b> triggered by noise, light or touch; <b>consciousness is preserved</b>, so they are extremely painful.</li>
+  <li>Autonomic: fever, sweating, high blood pressure, fast heart rate, arrhythmias.</li>
+ </ul>
+ <table>
+  <tr><th style="width:22%">Other forms</th><th>Features</th></tr>
+  <tr><td><b>Localized</b></td><td>Rigidity of muscles near the wound; may progress to generalized tetanus.</td></tr>
+  <tr><td><b>Cephalic</b></td><td>Head or face injury, or chronic otitis media; cranial nerve palsies (often facial). Short incubation; may generalize.</td></tr>
+  <tr><td><b>Neonatal</b></td><td>Unhealed umbilical stump, usually when the mother is unvaccinated; poor sucking, rigidity, spasms. <b>India was validated for elimination of maternal and neonatal tetanus in 2015</b> (WHO), thanks to maternal Td/TT vaccination and clean deliveries.</td></tr>
+ </table>
+ <h3>Complications</h3>
+ <p>Laryngospasm (airway obstruction), <b>fractures of the spine and long bones</b> from spasms, aspiration pneumonia, autonomic storm and arrhythmias, pulmonary embolism, hospital infections, death. <b>Case-fatality is about 10%</b> (CDC), and higher in the elderly and the unvaccinated.</p>
+ <h2>5. Diagnosis</h2>
+ <ul>
+  <li><b>Clinical diagnosis:</b> there is <b>no confirmatory laboratory test</b>.</li>
+  <li>Wound culture grows <i>C. tetani</i> in only <b>about 30%</b> of cases, and it can grow from people without tetanus.</li>
+  <li><b>Spatula test</b> (bedside): touching the posterior pharynx with a spatula causes a reflex <b>spasm of the masseters</b> (the patient bites the spatula) instead of a gag. Reported sensitivity is about 94% and specificity about 100%.</li>
+  <li style="font-size:9.6pt">Differentials: strychnine poisoning, dystonic reaction (drugs), hypocalcaemic tetany, meningitis, dental abscess with trismus, rabies.</li>
+ </ul>
+ <div class="ft"><span>Educational content only · Not medical advice</span><span>4 / 6</span></div>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page">
+ <div class="hd"><span><b>Tetanus notes</b> · Treatment and prevention</span><span>Abhigyan Jain · MBBS student</span></div>
+ <h2 style="margin-top:2px">6. Treatment <span class="small">(hospital/ICU only, for doctors; for information)</span></h2>
+ <ul>
+  <li><b>Admit to ICU</b> in a <b>quiet, dark room</b> to reduce triggered spasms.</li>
+  <li><b>Neutralize unbound toxin:</b> <b>Human tetanus immune globulin (HTIG/TIG)</b>, single IM dose. <b>500 IU</b> is now recommended (CDC/ACIP) and appears as effective as the older 3,000–6,000 IU; part may be infiltrated around the wound. TIG <b>cannot</b> remove toxin already bound to nerves.</li>
+  <li><b>Remove the source:</b> thorough wound cleaning and <b>surgical debridement</b>.</li>
+  <li><b>Antibiotic:</b> <b>metronidazole</b> (preferred) for 7–10 days; parenteral penicillin G is an alternative.</li>
+  <li><b>Control spasms:</b> benzodiazepines (e.g. diazepam), magnesium sulfate; severe cases need neuromuscular blockade with mechanical ventilation.</li>
+  <li><b>Airway:</b> early intubation or <b>tracheostomy</b> in severe disease. Manage autonomic dysfunction, nutrition, DVT prophylaxis.</li>
+  <li><b>Start active immunization (Td)</b> during recovery, at a different site from TIG, because the disease gives no immunity.</li>
+ </ul>
+ <h2>7. Prevention: vaccination</h2>
+ <p>The vaccine is <b>tetanus toxoid</b>: the toxin inactivated with formaldehyde. It is harmless but teaches the body to make antitoxin antibodies. In India, <b>TT has been replaced by Td</b> (tetanus + adult-dose diphtheria).</p>
+ <table>
+  <tr><th>India UIP: who</th><th>When</th><th>Vaccine</th></tr>
+  <tr><td>Infants (primary)</td><td>6, 10, 14 weeks</td><td>Pentavalent (DPT + Hep B + Hib)</td></tr>
+  <tr><td>Children</td><td>16–24 months; 5–6 years</td><td>DPT booster-1; DPT booster-2</td></tr>
+  <tr><td>Adolescents</td><td>10 years and 16 years</td><td>Td</td></tr>
+  <tr><td>Pregnant women</td><td>Early pregnancy; 4 weeks later</td><td>Td-1, Td-2 (or one Td-booster if vaccinated with 2 doses in a pregnancy within the last 3 years)</td></tr>
+  <tr><td>Adults</td><td>Every 10 years</td><td>Td booster</td></tr>
+ </table>
+ <h3>Wound management: who needs vaccine or TIG? <span class="small">(CDC)</span></h3>
+ <table>
+  <tr><th>Previous tetanus doses</th><th>Clean, minor wound</th><th>All other wounds<br><span style="font-weight:500">(dirty, puncture, burns, crush, bites)</span></th></tr>
+  <tr><td><b>Unknown or fewer than 3</b></td><td>Td: <b>Yes</b> · TIG: No</td><td>Td: <b>Yes</b> · TIG: <b>Yes</b> (250 IU IM)</td></tr>
+  <tr><td><b>3 or more</b></td><td>Td only if last dose <b>≥ 10 years</b> ago · TIG: No</td><td>Td only if last dose <b>≥ 5 years</b> ago · TIG: No</td></tr>
+ </table>
+ <p class="small">People with HIV or severe immunodeficiency who have contaminated wounds should also get TIG, regardless of vaccination history. Antibiotics are not used to prevent tetanus after a wound.</p>
+ <div class="ft"><span>Educational content only · Not medical advice · Treatment decisions are made by a doctor.</span><span>5 / 6</span></div>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page">
+ <div class="hd"><span><b>Tetanus notes</b> · What everyone should do</span><span>Abhigyan Jain · MBBS student</span></div>
+ <h2 style="margin-top:2px">8. Got hurt? Do this</h2>
+ <div class="two">
+  <div>
+   <div class="step"><div class="n">1</div><div><b>Wash the wound</b> with soap and clean running water for several minutes. Remove visible dirt.</div></div>
+   <div class="step"><div class="n">2</div><div><b>Cover it</b> with a clean dressing. Do <b>not</b> put mud, cow dung, turmeric paste, oil or ash on it.</div></div>
+   <div class="step"><div class="n">3</div><div><b>Check your vaccine:</b> when was your last tetanus (TT/Td) shot?</div></div>
+   <div class="step red"><div class="n">4</div><div><b>Go to a doctor the same day</b> if the wound is <b>deep, dirty, a puncture, a burn, a crush injury or an animal bite</b>, <i>and</i> your last shot was <b>over 5 years ago or you don't know</b>.</div></div>
+   <div class="step"><div class="n">5</div><div>Even for clean small cuts: get a <b>Td booster if it has been 10 years</b>.</div></div>
+  </div>
+  <div class="fig"><img src="wash.jpg" style="height:74mm;object-fit:cover;width:100%"><div class="cap">Wash the actual wound with soap and running water.</div></div>
+ </div>
+ <div class="box myth" style="border-width:2px"><span class="tag r">EMERGENCY: GO TO A HOSPITAL NOW</span>Jaw stiffness or difficulty opening the mouth, difficulty swallowing, stiff neck, back or belly, painful muscle spasms, especially days to weeks after any wound.</div>
+ <h2>9. Myths vs facts</h2>
+ <table style="font-size:8.6pt">
+  <tr><th>Myth</th><th>Fact</th></tr>
+  <tr><td>Rust causes tetanus.</td><td>Soil bacteria cause it. Rust is only a sign the object was outdoors.</td></tr>
+  <tr><td>Only nails cause tetanus.</td><td>Any wound can: thorns, burns, bites, dirty needles, even scratches.</td></tr>
+  <tr><td>One TT injection protects for life.</td><td>Protection fades. You need a booster every 10 years (sooner for dirty wounds).</td></tr>
+  <tr><td>If you survive tetanus, you are immune.</td><td>No. The disease gives no immunity; vaccinate after recovery.</td></tr>
+  <tr><td>Tetanus spreads from person to person.</td><td>No. It is not contagious.</td></tr>
+ </table>
+ <div class="box exam"><span class="tag">EXAM ONE-LINERS</span>
+  <span class="kv"><b>Drumstick</b> = terminal round spore · <b>Tetanospasmin</b> (plasmid) + <b>tetanolysin</b> · cleaves <b>synaptobrevin/VAMP</b> · blocks <b>GABA + glycine</b> (Renshaw cells) · <b>retrograde axonal transport</b> · first sign <b>trismus</b> · <b>risus sardonicus</b>, <b>opisthotonus</b> · consciousness preserved · <b>spatula test</b> · culture positive ~30% · <b>HTIG 500 IU</b> + <b>metronidazole</b> · <b>no immunity after disease</b> · toxoid vaccine · India MNTE 2015.</span></div>
+ <p class="small"><b>Sources:</b> CDC Pink Book, Ch. 21 (Tetanus); CDC Clinical Overview and Clinical Care of Tetanus; CDC wound-management guidance; Ananthanarayan & Paniker's Textbook of Microbiology; MoHFW National Immunization Schedule (UIP) and Td operational guidelines; WHO (India MNTE validation, 2015).</p>
+ <div class="box info" style="margin-top:4px"><b>Disclaimer:</b> These notes are for education and awareness only and are <b>not medical advice</b>. They do not replace a consultation with a qualified doctor. If you are injured or unwell, please see a doctor.<br><b>More myths broken every day → @abhigyanjainmbbs</b></div>
+ <div class="ft"><span>Educational content only · Not medical advice</span><span>6 / 6</span></div>
+</div>
+</body></html>

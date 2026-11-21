@@ -329,14 +329,7 @@ def film_overlay():
     d = np.sqrt(((xx - W * .5) / (W * .62)) ** 2 + ((yy - H * .45) / (H * .62)) ** 2)
     a = np.clip(d - 0.35, 0, 1) ** 1.6 * 235
     im = Image.fromarray(np.dstack([np.zeros_like(a), np.zeros_like(a), np.zeros_like(a), a]).astype(np.uint8), 'RGBA')
-    # crease: soft dark line + light highlight next to it, slightly right of centre
-    cx = int(W * 0.6)
-    cr = Image.new('RGBA', (W, H), (0, 0, 0, 0))
-    dd = ImageDraw.Draw(cr)
-    dd.rectangle((cx - 2, 0, cx + 1, H), fill=(0, 0, 0, 70))
-    dd.rectangle((cx + 2, 0, cx + 5, H), fill=(255, 255, 255, 26))
-    cr = cr.filter(ImageFilter.GaussianBlur(2.2))
-    im.alpha_composite(cr)
+    # (no paper crease line: rejected on the rabies video)
     _OV['v'] = im
     return im
 
