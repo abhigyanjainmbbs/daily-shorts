@@ -259,6 +259,8 @@ def thumbnail(script_path, out_jpg):
     script = json.load(open(script_path))
     pal = script.get('palette', 'ocean')
     first = script['scenes'][0]
+    if isinstance(first.get('visual'), dict):
+        first['visual']['_dir'] = os.path.join(ROOT, script.get('img_dir') or os.path.join('assets', 'gen', script.get('id', '')))
     sp_pal = first.get('bg') or pal
     fr = S.background(sp_pal).copy()
     sc = S.make(first, 3.0, sp_pal, 0)
