@@ -1,0 +1,246 @@
+{
+ "duration": 162.63,
+ "voice": "voice_full.wav",
+ "voice_at": 0,
+ "duck_db": 7.0,
+ "music": [
+  {
+   "file": "/home/claude/kit/snd/music_orch_tension_doc.mp3",
+   "at": 0.0,
+   "from": 0,
+   "dur": 12.4,
+   "level": -26.5,
+   "fi": 0.2,
+   "fo": 0.6
+  },
+  {
+   "file": "/home/claude/kit/snd/music_pulses_suspense.mp3",
+   "at": 12.0,
+   "from": 0,
+   "dur": 46.9,
+   "level": -27.5,
+   "fi": 0.4,
+   "fo": 0.7
+  },
+  {
+   "file": "/home/claude/kit/snd/music_dark_cinematic.mp3",
+   "at": 58.5,
+   "from": 52,
+   "dur": 13.1,
+   "level": -26.0,
+   "fi": 0.4,
+   "fo": 0.6
+  },
+  {
+   "file": "/home/claude/kit/snd/music_doc_tension_buildup.mp3",
+   "at": 71.1,
+   "from": 0,
+   "dur": 29.5,
+   "level": -26.5,
+   "fi": 0.5,
+   "fo": 0.7
+  },
+  {
+   "file": "/home/claude/kit/snd/music_dark_cinematic.mp3",
+   "at": 100.2,
+   "from": 66,
+   "dur": 13.2,
+   "level": -26.5,
+   "fi": 0.4,
+   "fo": 0.6
+  },
+  {
+   "file": "/home/claude/kit/snd/music_orch_tension_doc.mp3",
+   "at": 113.1,
+   "from": 12,
+   "dur": 7.7,
+   "level": -26.5,
+   "fi": 0.3,
+   "fo": 0.5
+  },
+  {
+   "file": "/home/claude/kit/snd/music_hopeful_atlas.mp3",
+   "at": 120.5,
+   "from": 24,
+   "dur": 8.1,
+   "level": -26.5,
+   "fi": 0.5,
+   "fo": 0.6
+  },
+  {
+   "file": "/home/claude/kit/snd/music_hopeful_nastel.mp3",
+   "at": 128.2,
+   "from": 4,
+   "dur": 26.4,
+   "level": -27.5,
+   "fi": 0.6,
+   "fo": 0.6
+  },
+  {
+   "file": "/home/claude/kit/snd/music_hopeful_nastel.mp3",
+   "at": 154.2,
+   "from": 50,
+   "dur": 8.43,
+   "level": -26.5,
+   "fi": 0.3,
+   "fo": 1.6
+  }
+ ],
+ "sfx": [
+  {
+   "file": "/home/claude/kit/snd/sfx_heartbeat.mp3",
+   "at": 0.0,
+   "dur": 3.0,
+   "gain": -6,
+   "fo": 0.6
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_riser.mp3",
+   "at": 0.8571000000000004,
+   "dur": 1.6,
+   "gain": -12,
+   "fo": 0.05
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom2.mp3",
+   "at": 2.4571000000000005,
+   "gain": -4
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom.mp3",
+   "at": 9.4314,
+   "gain": -9
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_riser.mp3",
+   "at": 9.21,
+   "dur": 3.0,
+   "gain": -13
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom.mp3",
+   "at": 12.312100000000001,
+   "gain": -8
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom.mp3",
+   "at": 25.263000000000005,
+   "gain": -11
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_riser2.mp3",
+   "at": 29.921250000000004,
+   "dur": 4.0,
+   "gain": -14,
+   "fo": 0.4
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom.mp3",
+   "at": 32.8757,
+   "gain": -8
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_heartbeat.mp3",
+   "at": 42.055,
+   "dur": 4.0,
+   "gain": -9,
+   "fo": 0.6
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_dog_bark_growl.mp3",
+   "at": 53.16614999999999,
+   "dur": 2.6,
+   "gain": -2,
+   "fo": 0.3
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_riser.mp3",
+   "at": 58.19999999999998,
+   "dur": 2.2,
+   "gain": -12
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom.mp3",
+   "at": 60.063499999999976,
+   "gain": -7
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_clock.mp3",
+   "at": 63.40709999999998,
+   "dur": 7.6,
+   "gain": -10,
+   "fi": 0.2,
+   "fo": 0.5
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom.mp3",
+   "at": 66.64909999999998,
+   "gain": -8
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_riser2.mp3",
+   "at": 71.66049999999997,
+   "dur": 5.5,
+   "gain": -14,
+   "fo": 0.5
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom2.mp3",
+   "at": 81.18389999999997,
+   "gain": -4
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_heartbeat.mp3",
+   "at": 83.40499999999996,
+   "dur": 6.8,
+   "gain": -7,
+   "fo": 0.8
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom.mp3",
+   "at": 90.36739999999996,
+   "gain": -8
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_hospital.mp3",
+   "at": 93.07499999999996,
+   "dur": 7.3,
+   "gain": -14,
+   "fi": 0.4,
+   "fo": 0.6
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom2.mp3",
+   "at": 96.75999999999996,
+   "gain": -4
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_heartbeat.mp3",
+   "at": 108.48999999999994,
+   "dur": 4.7,
+   "gain": -7,
+   "fo": 0.6
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom.mp3",
+   "at": 110.68999999999994,
+   "gain": -8
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom2.mp3",
+   "at": 113.34899999999993,
+   "gain": -6
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_riser.mp3",
+   "at": 118.67499999999993,
+   "dur": 2.0,
+   "gain": -14
+  },
+  {
+   "file": "/home/claude/kit/snd/sfx_boom.mp3",
+   "at": 149.79074999999995,
+   "gain": -10
+  }
+ ]
+}
