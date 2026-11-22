@@ -1,0 +1,1677 @@
+{
+ "id": "2026-11-22-naphthalene",
+ "palette": "violet",
+ "captions": false,
+ "film": true,
+ "title": "Naphthalene balls ghar mein? 😳 Ye RBC todti hain #shorts",
+ "thumb_kw": [
+  "MOTHBALLS",
+  "KHATRA?",
+  "red"
+ ],
+ "description": "",
+ "hashtags": [
+  "naphthalene",
+  "mothballs",
+  "mbbs",
+  "medicalfacts",
+  "babycare",
+  "healthawareness",
+  "g6pd",
+  "shorts",
+  "reels"
+ ],
+ "scenes": [
+  {
+   "vo": "[tense] नानी के संदूक में रखी ये सफ़ेद गोलियाँ... शायद आपकी अलमारी में भी हैं। पर कभी सोचा — ये धीरे-धीरे छोटी क्यों होती जाती हैं?",
+   "kw": [
+    [
+     "NAANI KE SANDOOK MEIN",
+     "YE SAFED GOLIYAN",
+     "orange",
+     0.0
+    ],
+    [
+     "PAR YE CHHOTI",
+     "KYUN HOTI JAATI HAIN?",
+     "red",
+     0.6
+    ]
+   ],
+   "bg": "amber",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "almirah",
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "dark": 0.05
+    },
+    "layers": [
+     {
+      "img": "mothball_cut",
+      "w": 150,
+      "x": 560,
+      "y": 1250,
+      "shadow": true,
+      "keys": [
+       {
+        "t": 0,
+        "scale": 0.2,
+        "alpha": 0
+       },
+       {
+        "t": 0.12,
+        "scale": 1.0,
+        "alpha": 1,
+        "e": "back"
+       },
+       {
+        "t": 0.6,
+        "scale": 1.0
+       },
+       {
+        "t": 1.0,
+        "scale": 0.55
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "glow",
+      "x": 560,
+      "y": 1250,
+      "r": 240,
+      "col": [
+       255,
+       230,
+       180
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Naphthalene balls",
+    "sub": "almirah mein rakhi safed goliyan"
+   },
+   "sfx": "boom"
+  },
+  {
+   "vo": "[intrigued] क्योंकि ये पिघलती नहीं — सीधे gas बन जाती हैं। इसे कहते हैं sublimation।",
+   "kw": [
+    [
+     "PIGHALTI NAHI",
+     "SEEDHE GAS",
+     "purple",
+     0.0
+    ],
+    [
+     "ISE KEHTE HAIN",
+     "SUBLIMATION",
+     "yellow",
+     0.55
+    ]
+   ],
+   "bg": "violet",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "shelf_closeup",
+     "zoom": [
+      1.08,
+      1.0
+     ],
+     "dark": 0.1
+    },
+    "layers": [
+     {
+      "img": "mothball_cut",
+      "w": 190,
+      "x": 470,
+      "y": 1300,
+      "shadow": true
+     },
+     {
+      "img": "vapour_cut",
+      "w": 320,
+      "x": 490,
+      "y": 950,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "y": 1150
+       },
+       {
+        "t": 0.35,
+        "alpha": 0.85,
+        "y": 950
+       },
+       {
+        "t": 1.0,
+        "alpha": 0.2,
+        "y": 720
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "steam",
+      "x": 480,
+      "y": 1150,
+      "w": 320
+     },
+     {
+      "type": "particles",
+      "col": [
+       220,
+       220,
+       255
+      ],
+      "n": 20,
+      "t": 0.3
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Sublimation",
+    "sub": "solid se seedhe gas"
+   },
+   "sfx": "riser"
+  },
+  {
+   "vo": "[serious] मतलब जो गोली गायब हो रही है... वो हवा में घुल रही है। और वही हवा आप साँस में ले रहे हो।",
+   "kw": [
+    [
+     "JO GOLI GHAT RAHI HAI",
+     "WO HAWA MEIN HAI",
+     "red",
+     0.0
+    ],
+    [
+     "AUR WAHI HAWA",
+     "AAP SAANS LE RAHE HO",
+     "red",
+     0.55
+    ]
+   ],
+   "bg": "navy",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "room_air",
+     "zoom": [
+      1.12,
+      1.0
+     ],
+     "dark": 0.12
+    },
+    "fx": [
+     {
+      "type": "steam",
+      "x": 540,
+      "y": 1200,
+      "w": 700
+     },
+     {
+      "type": "particles",
+      "col": [
+       200,
+       210,
+       255
+      ],
+      "n": 30
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Wahi hawa",
+    "sub": "aap saans le rahe ho"
+   }
+  },
+  {
+   "vo": "[explaining] ये है naphthalene — coal tar और petroleum से बनने वाला केमिकल, कीड़ों को भगाने के लिए।",
+   "kw": [
+    [
+     "YE HAI",
+     "NAPHTHALENE",
+     "orange",
+     0.0
+    ],
+    [
+     "COAL TAR SE",
+     "BANTA HAI",
+     "yellow",
+     0.5
+    ]
+   ],
+   "bg": "ember",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "coal_tar",
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "dark": 0.15,
+     "blur": 2
+    },
+    "layers": [
+     {
+      "img": "molecule_cut",
+      "w": 520,
+      "x": 540,
+      "y": 1150,
+      "spin": 6,
+      "glow": [
+       255,
+       180,
+       90
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.6
+       },
+       {
+        "t": 0.45,
+        "alpha": 1,
+        "scale": 1.0,
+        "e": "back"
+       }
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Naphthalene",
+    "sub": "coal tar ka chemical"
+   },
+   "sfx": "boom2"
+  },
+  {
+   "vo": "[serious] पर MBBS student होने के नाते सच बताऊँ? इसका असली निशाना कीड़े नहीं... हमारे red blood cells हैं।",
+   "kw": [
+    [
+     "ASLI NISHANA",
+     "KEEDE NAHI",
+     "white",
+     0.0
+    ],
+    [
+     "HAMARE",
+     "RED BLOOD CELLS",
+     "red",
+     0.5
+    ]
+   ],
+   "bg": "crimson",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "blood_vessel",
+     "zoom": [
+      1.1,
+      1.0
+     ],
+     "dark": 0.05
+    },
+    "layers": [
+     {
+      "img": "rbc_cut",
+      "w": 300,
+      "x": 540,
+      "y": 1100,
+      "bob": 18,
+      "spin": 3,
+      "shadow": true,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.5
+       },
+       {
+        "t": 0.5,
+        "alpha": 1,
+        "scale": 1.0,
+        "e": "back"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1100,
+      "r": 300,
+      "col": [
+       255,
+       80,
+       80
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Target",
+    "sub": "red blood cells"
+   },
+   "sfx": "heartbeat"
+  },
+  {
+   "vo": "[explaining] साँस से, skin से या मुँह से — body में पहुँचते ही liver इसे तोड़ता है, और बनते हैं naphthol और naphthoquinone जैसे oxidants।",
+   "kw": [
+    [
+     "LIVER ISE",
+     "TODTA HAI",
+     "orange",
+     0.0
+    ],
+    [
+     "BANTE HAIN",
+     "OXIDANTS",
+     "yellow",
+     0.55
+    ]
+   ],
+   "bg": "amber",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "liver_organ",
+     "zoom": [
+      1.0,
+      1.12
+     ],
+     "dark": 0.08
+    },
+    "layers": [
+     {
+      "img": "molecule_cut",
+      "w": 260,
+      "x": 430,
+      "y": 820,
+      "spin": 8,
+      "keys": [
+       {
+        "t": 0,
+        "x": 200,
+        "y": 600,
+        "alpha": 0
+       },
+       {
+        "t": 0.25,
+        "x": 430,
+        "y": 820,
+        "alpha": 1
+       },
+       {
+        "t": 0.75,
+        "x": 640,
+        "y": 1020,
+        "alpha": 0.2
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "particles",
+      "col": [
+       255,
+       200,
+       90
+      ],
+      "n": 26,
+      "t": 0.5
+     },
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 950,
+      "r": 280,
+      "col": [
+       255,
+       170,
+       60
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Liver",
+    "sub": "naphthol, naphthoquinone"
+   }
+  },
+  {
+   "vo": "[tense] Red blood cell की अपनी ढाल होती है — glutathione। ये oxidants उसी ढाल को ख़त्म कर देते हैं।",
+   "kw": [
+    [
+     "RBC KI DHAAL",
+     "GLUTATHIONE",
+     "green",
+     0.0
+    ],
+    [
+     "OXIDANTS USE",
+     "KHATAM KARTE HAIN",
+     "red",
+     0.55
+    ]
+   ],
+   "bg": "teal",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "blood_vessel",
+     "zoom": [
+      1.06,
+      1.0
+     ],
+     "dark": 0.2,
+     "blur": 3
+    },
+    "layers": [
+     {
+      "img": "rbc_cut",
+      "w": 300,
+      "x": 540,
+      "y": 1120,
+      "bob": 12
+     },
+     {
+      "img": "shield_cut",
+      "w": 520,
+      "x": 540,
+      "y": 1120,
+      "glow": [
+       120,
+       255,
+       180
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 1.4
+       },
+       {
+        "t": 0.25,
+        "alpha": 0.9,
+        "scale": 1.0,
+        "e": "out"
+       },
+       {
+        "t": 0.7,
+        "alpha": 0.9
+       },
+       {
+        "t": 1.0,
+        "alpha": 0.15
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "particles",
+      "col": [
+       255,
+       120,
+       80
+      ],
+      "n": 22,
+      "t": 0.6
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Glutathione",
+    "sub": "RBC ki dhaal"
+   }
+  },
+  {
+   "vo": "[grave] ढाल टूटी... तो RBC फटने लगते हैं — इसे कहते हैं hemolysis।",
+   "kw": [
+    [
+     "DHAAL TOOTI",
+     "RBC PHAT GAYE",
+     "red",
+     0.0
+    ],
+    [
+     "ISE KEHTE HAIN",
+     "HEMOLYSIS",
+     "red",
+     0.5
+    ]
+   ],
+   "bg": "crimson",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "rbc_burst",
+     "zoom": [
+      1.0,
+      1.14
+     ],
+     "dark": 0.05
+    },
+    "fx": [
+     {
+      "type": "shake",
+      "t": 0.25,
+      "d": 0.4,
+      "amp": 16
+     },
+     {
+      "type": "flash",
+      "t": 0.25,
+      "d": 0.2,
+      "col": [
+       255,
+       50,
+       40
+      ]
+     },
+     {
+      "type": "particles",
+      "col": [
+       255,
+       60,
+       60
+      ],
+      "n": 34,
+      "t": 0.3
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Hemolysis",
+    "sub": "RBC phatna"
+   },
+   "sfx": "boom"
+  },
+  {
+   "vo": "[explaining] और बचे hemoglobin का iron, ferrous से ferric बन जाता है — methemoglobin — जो oxygen पकड़ ही नहीं पाता।",
+   "kw": [
+    [
+     "IRON FERROUS SE",
+     "FERRIC",
+     "blue",
+     0.0
+    ],
+    [
+     "BANTA HAI",
+     "METHEMOGLOBIN",
+     "purple",
+     0.45
+    ]
+   ],
+   "bg": "navy",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "blood_vessel",
+     "zoom": [
+      1.12,
+      1.02
+     ],
+     "dark": 0.3,
+     "blur": 1
+    },
+    "layers": [
+     {
+      "img": "rbc_cut",
+      "w": 320,
+      "x": 540,
+      "y": 1080,
+      "bob": 14,
+      "glow": [
+       90,
+       110,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 1
+       },
+       {
+        "t": 0.5,
+        "alpha": 1
+       }
+      ]
+     },
+     {
+      "text": "Fe2+",
+      "font": "osw",
+      "size": 92,
+      "col": [
+       255,
+       120,
+       110
+      ],
+      "x": 380,
+      "y": 1480,
+      "swap": [
+       [
+        0.5,
+        "Fe3+"
+       ]
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1080,
+      "r": 280,
+      "col": [
+       70,
+       90,
+       220
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Methemoglobin",
+    "sub": "oxygen pakad nahi paata"
+   }
+  },
+  {
+   "vo": "[serious] नतीजा? कोला जैसा काला पेशाब, पीली आँखें, नीले होंठ, साँस फूलना — और kidneys पर भारी बोझ।",
+   "kw": [
+    [
+     "COLA JAISA",
+     "KAALA PESHAB",
+     "orange",
+     0.0
+    ],
+    [
+     "PEELI AANKHEN",
+     "NEELE HONTH",
+     "yellow",
+     0.4
+    ],
+    [
+     "KIDNEYS PAR",
+     "BHAARI BOJH",
+     "red",
+     0.72
+    ]
+   ],
+   "bg": "soil",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "seq": [
+      [
+       "urine_sample",
+       0.0
+      ],
+      [
+       "kidney_organ",
+       0.6,
+       0,
+       0.08
+      ]
+     ],
+     "zoom": [
+      1.0,
+      1.1
+     ]
+    },
+    "fx": [
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1150,
+      "r": 260,
+      "col": [
+       180,
+       120,
+       50
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Signs",
+    "sub": "dark urine, jaundice, cyanosis"
+   }
+  },
+  {
+   "vo": "[intrigued] अब twist — कुछ लोगों में ये ढाल पैदाइशी कमज़ोर होती है। इसे कहते हैं G6PD deficiency — glucose-6-phosphate dehydrogenase नाम के enzyme की कमी।",
+   "kw": [
+    [
+     "KUCH LOGON MEIN",
+     "DHAAL KAMZOR",
+     "purple",
+     0.0
+    ],
+    [
+     "G6PD",
+     "DEFICIENCY",
+     "purple",
+     0.45
+    ]
+   ],
+   "bg": "violet",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "blood_vessel",
+     "zoom": [
+      1.08,
+      1.0
+     ],
+     "dark": 0.25,
+     "blur": 3
+    },
+    "layers": [
+     {
+      "img": "rbc_cut",
+      "w": 300,
+      "x": 540,
+      "y": 1100,
+      "bob": 12
+     },
+     {
+      "img": "shield_cut",
+      "w": 500,
+      "x": 540,
+      "y": 1100,
+      "glow": [
+       150,
+       120,
+       255
+      ],
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0.8
+       },
+       {
+        "t": 0.45,
+        "alpha": 0.8
+       },
+       {
+        "t": 0.6,
+        "alpha": 0.25
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "crack",
+      "x": 540,
+      "y": 1100,
+      "t": 0.5
+     },
+     {
+      "type": "particles",
+      "col": [
+       190,
+       120,
+       255
+      ],
+      "n": 22,
+      "t": 0.55
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "G6PD deficiency",
+    "sub": "glucose-6-phosphate dehydrogenase"
+   },
+   "sfx": "riser2"
+  },
+  {
+   "vo": "[serious] दुनिया में करीब चालीस करोड़ लोगों में ये कमी है — India में भी लाखों — और ज़्यादातर को पता ही नहीं।",
+   "kw": [
+    [
+     "DUNIYA MEIN KAREEB",
+     "40 CRORE LOG",
+     "yellow",
+     0.0
+    ],
+    [
+     "AUR ZYADATAR KO",
+     "PATA HI NAHI",
+     "red",
+     0.55
+    ]
+   ],
+   "bg": "navy",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "blood_vessel",
+     "zoom": [
+      1.12,
+      1.0
+     ],
+     "dark": 0.45,
+     "blur": 6
+    },
+    "fx": [
+     {
+      "type": "people",
+      "n": 14,
+      "red": 3,
+      "y": 1280,
+      "t": 0.15
+     },
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1280,
+      "r": 320,
+      "col": [
+       255,
+       200,
+       90
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "~400 million",
+    "sub": "G6PD deficiency worldwide"
+   }
+  },
+  {
+   "vo": "[grave] सबसे बड़ा ख़तरा — नवजात baby। नए baby के कपड़े महीनों संदूक में naphthalene के साथ रखे... और वही पहना दिए।",
+   "kw": [
+    [
+     "SABSE BADA KHATRA",
+     "NAVJAAT BABY",
+     "red",
+     0.0
+    ],
+    [
+     "KAPDE MAHINON",
+     "SANDOOK MEIN RAKHE",
+     "orange",
+     0.5
+    ]
+   ],
+   "bg": "amber",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "trunk",
+     "zoom": [
+      1.0,
+      1.12
+     ],
+     "dark": 0.08
+    },
+    "layers": [
+     {
+      "img": "baby_cloth_cut",
+      "w": 420,
+      "x": 540,
+      "y": 1200,
+      "shadow": true,
+      "keys": [
+       {
+        "t": 0,
+        "y": 2300
+       },
+       {
+        "t": 0.15,
+        "y": 1200,
+        "e": "back"
+       }
+      ]
+     },
+     {
+      "img": "mothball_cut",
+      "w": 110,
+      "x": 760,
+      "y": 1360,
+      "shadow": true,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.45,
+        "alpha": 1
+       }
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Navjaat baby",
+    "sub": "kapde sandook mein"
+   },
+   "sfx": "clock"
+  },
+  {
+   "vo": "[grave] कुछ ही घंटों में RBC टूटने लगते हैं, bilirubin बढ़ता है, और baby पीला पड़ने लगता है।",
+   "kw": [
+    [
+     "KUCH GHANTON MEIN",
+     "RBC TOOTNE LAGE",
+     "red",
+     0.0
+    ],
+    [
+     "BILIRUBIN BADHA",
+     "BABY PEELA",
+     "yellow",
+     0.5
+    ]
+   ],
+   "bg": "amber",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "newborn_cot",
+     "zoom": [
+      1.08,
+      1.0
+     ],
+     "dark": 0.05
+    },
+    "fx": [
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1100,
+      "r": 300,
+      "col": [
+       255,
+       210,
+       80
+      ]
+     },
+     {
+      "type": "heartbeat"
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Bilirubin",
+    "sub": "baby peela padta hai"
+   },
+   "sfx": "heartbeat"
+  },
+  {
+   "vo": "[grave] अगर ये bilirubin दिमाग़ तक पहुँच जाए — तो kernicterus — यानी permanent brain damage।",
+   "kw": [
+    [
+     "BILIRUBIN DIMAAG",
+     "TAK PAHUNCHA",
+     "red",
+     0.0
+    ],
+    [
+     "KERNICTERUS",
+     "BRAIN DAMAGE",
+     "red",
+     0.5
+    ]
+   ],
+   "bg": "crimson",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "seq": [
+      [
+       "newborn_jaundice",
+       0.0
+      ],
+      [
+       "brain_organ",
+       0.5,
+       0,
+       0.05
+      ]
+     ],
+     "zoom": [
+      1.0,
+      1.1
+     ]
+    },
+    "fx": [
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1000,
+      "r": 300,
+      "col": [
+       255,
+       200,
+       60
+      ]
+     },
+     {
+      "type": "flash",
+      "t": 0.5,
+      "d": 0.25,
+      "col": [
+       255,
+       220,
+       120
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Kernicterus",
+    "sub": "permanent brain damage"
+   },
+   "sfx": "boom2"
+  },
+  {
+   "vo": "[tense] और छोटे बच्चे? सफ़ेद, गोल, चमकदार गोली — उन्हें लगती है मिश्री या टॉफ़ी।",
+   "kw": [
+    [
+     "CHHOTE BACHCHE?",
+     "SAFED CHAMAKDAR GOLI",
+     "orange",
+     0.0
+    ],
+    [
+     "UNHE LAGTI HAI",
+     "MISHRI YA TOFFEE",
+     "yellow",
+     0.5
+    ]
+   ],
+   "bg": "sand",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "toddler_floor",
+     "zoom": [
+      1.1,
+      1.0
+     ],
+     "dark": 0.05
+    },
+    "layers": [
+     {
+      "img": "mothball_cut",
+      "w": 120,
+      "x": 700,
+      "y": 1420,
+      "shadow": true,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.3,
+        "alpha": 1
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "glow",
+      "x": 700,
+      "y": 1420,
+      "r": 200,
+      "col": [
+       255,
+       240,
+       200
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Bachche",
+    "sub": "goli = mishri jaisi"
+   },
+   "sfx": "tap"
+  },
+  {
+   "vo": "[serious] इसीलिए European Union ने दो हज़ार आठ में naphthalene वाली mothballs पर ban लगा दिया। और WHO की cancer agency, IARC, इसे possibly carcinogenic मानती है — Group 2B।",
+   "kw": [
+    [
+     "EUROPEAN UNION:",
+     "2008 MEIN BAN",
+     "blue",
+     0.0
+    ],
+    [
+     "WHO KI IARC:",
+     "GROUP 2B",
+     "purple",
+     0.55
+    ]
+   ],
+   "bg": "navy",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "shelf_closeup",
+     "zoom": [
+      1.06,
+      1.0
+     ],
+     "dark": 0.3,
+     "blur": 3
+    },
+    "layers": [
+     {
+      "img": "mothball_jar_cut",
+      "w": 440,
+      "x": 540,
+      "y": 1150,
+      "shadow": true,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.7
+       },
+       {
+        "t": 0.2,
+        "alpha": 1,
+        "scale": 1.0,
+        "e": "back"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "emoji",
+      "ch": "⛔",
+      "size": 200,
+      "x": 820,
+      "y": 860,
+      "t": 0.1
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "source_card",
+    "title": "EU REACH 2008 · IARC Group 2B"
+   },
+   "sfx": "riser"
+  },
+  {
+   "vo": "[hopeful] पर बचना आसान है... देखो।",
+   "kw": [
+    [
+     "PAR BACHNA",
+     "AASAAN HAI",
+     "green",
+     0.0
+    ]
+   ],
+   "bg": "mint",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "sunlight_clothes",
+     "zoom": [
+      1.0,
+      1.12
+     ]
+    },
+    "fx": [
+     {
+      "type": "particles",
+      "col": [
+       255,
+       255,
+       210
+      ],
+      "n": 24
+     },
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 700,
+      "r": 340,
+      "col": [
+       255,
+       245,
+       190
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Bachna aasaan hai",
+    "sub": "dekho"
+   }
+  },
+  {
+   "vo": "[firm] पहला — baby और बच्चों के कमरे में बिल्कुल नहीं। गोलियाँ हमेशा बंद डिब्बे में, बच्चों की पहुँच से ऊपर।",
+   "kw": [
+    [
+     "1. BACHCHON KE",
+     "KAMRE MEIN NAHI",
+     "green",
+     0.0
+    ],
+    [
+     "BAND DIBBE MEIN",
+     "PAHUNCH SE DOOR",
+     "green",
+     0.5
+    ]
+   ],
+   "bg": "mint",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "storage_safe",
+     "zoom": [
+      1.08,
+      1.0
+     ]
+    },
+    "layers": [
+     {
+      "img": "mothball_jar_cut",
+      "w": 380,
+      "x": 560,
+      "y": 1180,
+      "shadow": true,
+      "keys": [
+       {
+        "t": 0,
+        "y": 2200
+       },
+       {
+        "t": 0.15,
+        "y": 1180,
+        "e": "back"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "emoji",
+      "ch": "✅",
+      "size": 150,
+      "x": 860,
+      "y": 780,
+      "t": 0.15
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Rule 1",
+    "sub": "band dibba, bachchon se door"
+   }
+  },
+  {
+   "vo": "[firm] दूसरा — संदूक या अलमारी से निकले कपड़े पहले धूप और हवा में रखो, फिर धोओ — ख़ासकर baby के कपड़े।",
+   "kw": [
+    [
+     "2. DHOOP AUR",
+     "HAWA MEIN RAKHO",
+     "green",
+     0.0
+    ],
+    [
+     "PHIR DHOYEIN",
+     "KHAASKAR BABY KE",
+     "green",
+     0.5
+    ]
+   ],
+   "bg": "mint",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "sunlight_clothes",
+     "zoom": [
+      1.0,
+      1.1
+     ]
+    },
+    "layers": [
+     {
+      "img": "baby_cloth_cut",
+      "w": 360,
+      "x": 540,
+      "y": 1240,
+      "shadow": true,
+      "bob": 10,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.7
+       },
+       {
+        "t": 0.2,
+        "alpha": 1,
+        "scale": 1.0,
+        "e": "back"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "emoji",
+      "ch": "✅",
+      "size": 150,
+      "x": 860,
+      "y": 780,
+      "t": 0.15
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Rule 2",
+    "sub": "dhoop, hawa, phir dhulai"
+   }
+  },
+  {
+   "vo": "[confident] तीसरा — airtight डिब्बे, नीम के सूखे पत्ते या cedar wood, और कपड़ों को समय-समय पर धूप। कीड़े भी दूर, ख़तरा भी।",
+   "kw": [
+    [
+     "3. AIRTIGHT DIBBA",
+     "NEEM, CEDAR",
+     "green",
+     0.0
+    ],
+    [
+     "KEEDE BHI DOOR",
+     "KHATRA BHI",
+     "green",
+     0.55
+    ]
+   ],
+   "bg": "mint",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "storage_safe",
+     "zoom": [
+      1.1,
+      1.0
+     ]
+    },
+    "layers": [
+     {
+      "img": "neem_cut",
+      "w": 380,
+      "x": 560,
+      "y": 1220,
+      "rot": -8,
+      "shadow": true,
+      "wiggle": 5,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0,
+        "scale": 0.6
+       },
+       {
+        "t": 0.25,
+        "alpha": 1,
+        "scale": 1.0,
+        "e": "back"
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "emoji",
+      "ch": "✅",
+      "size": 150,
+      "x": 860,
+      "y": 780,
+      "t": 0.15
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Rule 3",
+    "sub": "airtight + neem/cedar"
+   }
+  },
+  {
+   "vo": "[firm] और अगर किसी बच्चे ने गोली मुँह में डाल ली या निगल ली — उल्टी मत करवाओ, पैकेट साथ लो, और सीधे hospital।",
+   "kw": [
+    [
+     "ULTI MAT",
+     "KARWAO",
+     "red",
+     0.0
+    ],
+    [
+     "PACKET SAATH LO",
+     "SEEDHE HOSPITAL",
+     "yellow",
+     0.5
+    ]
+   ],
+   "bg": "amber",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "hospital_er",
+     "zoom": [
+      1.0,
+      1.1
+     ],
+     "dark": 0.05
+    },
+    "layers": [
+     {
+      "img": "hand_glove_cut",
+      "w": 420,
+      "x": 420,
+      "y": 1350,
+      "keys": [
+       {
+        "t": 0,
+        "x": -200,
+        "alpha": 0
+       },
+       {
+        "t": 0.25,
+        "x": 420,
+        "alpha": 1,
+        "e": "out"
+       }
+      ]
+     },
+     {
+      "img": "mothball_cut",
+      "w": 110,
+      "x": 430,
+      "y": 1250,
+      "keys": [
+       {
+        "t": 0,
+        "alpha": 0
+       },
+       {
+        "t": 0.3,
+        "alpha": 1
+       }
+      ]
+     }
+    ],
+    "fx": [
+     {
+      "type": "emoji",
+      "ch": "🏥",
+      "size": 160,
+      "x": 830,
+      "y": 820,
+      "t": 0.5
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Agar nigal liya",
+    "sub": "ulti mat karwao, hospital"
+   },
+   "sfx": "hospital"
+  },
+  {
+   "vo": "[warm] ये video उस घर में ज़रूर भेजो जहाँ नया baby आने वाला है — आपका एक share किसी बच्चे का दिमाग़ बचा सकता है।",
+   "kw": [
+    [
+     "YE US GHAR BHEJO",
+     "JAHAN NAYA BABY HAI",
+     "yellow",
+     0.0
+    ],
+    [
+     "AAPKA EK SHARE",
+     "EK DIMAAG BACHA SAKTA HAI",
+     "green",
+     0.55
+    ]
+   ],
+   "bg": "mint",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "newborn_cot",
+     "zoom": [
+      1.08,
+      1.0
+     ]
+    },
+    "fx": [
+     {
+      "type": "emoji",
+      "ch": "📤",
+      "size": 170,
+      "x": 830,
+      "y": 1420,
+      "t": 0.6
+     },
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1000,
+      "r": 320,
+      "col": [
+       255,
+       240,
+       200
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Share karo",
+    "sub": "naye parents ko"
+   }
+  }
+ ],
+ "cta_plain": {
+  "vo": "Comment में लिखो NAPHTHALENE — मैं DM में free notes भेजूँगा। और याद रहे, ये video सिर्फ़ educational है, medical advice नहीं।",
+  "kw": [
+   [
+    "COMMENT KARO",
+    "NAPHTHALENE",
+    "yellow",
+    0.0
+   ],
+   [
+    "DM MEIN FREE",
+    "6-PAGE NOTES",
+    "green",
+    0.35
+   ],
+   [
+    "EDUCATIONAL ONLY",
+    "NOT MEDICAL ADVICE",
+    "white",
+    0.68
+   ]
+  ],
+  "bg": "amber",
+  "visual": {
+   "type": "comp",
+   "layers": [
+    {
+     "img": "notes_page",
+     "w": 640,
+     "x": 540,
+     "y": 1080,
+     "rot": -5,
+     "keys": [
+      {
+       "t": 0,
+       "y": 2600
+      },
+      {
+       "t": 0.15,
+       "y": 1080,
+       "e": "back"
+      }
+     ]
+    }
+   ],
+   "fx": [
+    {
+     "type": "emoji",
+     "ch": "💬",
+     "size": 160,
+     "x": 860,
+     "y": 700,
+     "t": 0.05
+    }
+   ]
+  },
+  "hold": 0.4,
+  "visual_fallback": {
+   "type": "title",
+   "title": "Comment: NAPHTHALENE",
+   "sub": "free 6-page notes in your DM"
+  }
+ }
+}

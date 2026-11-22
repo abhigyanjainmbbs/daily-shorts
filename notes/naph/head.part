@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Pop;src:url(Poppins-Medium.ttf);font-weight:500}
+@font-face{font-family:Pop;src:url(Poppins-Bold.ttf);font-weight:700}
+@font-face{font-family:Lora;src:url(Lora-Variable.ttf)}
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+body{margin:0;font-family:Pop,sans-serif;font-weight:500;color:#1d1b22;font-size:10.6pt;line-height:1.42}
+.page{width:210mm;height:297mm;padding:13mm 14mm 12mm;position:relative;page-break-after:always;background:#fbf7ef;overflow:hidden}
+.page:last-child{page-break-after:auto}
+.hd{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #2b2a6b;padding-bottom:5px;margin-bottom:9px;font-size:8.6pt;color:#2b2a6b}
+.hd b{font-weight:700}
+.ft{position:absolute;bottom:7mm;left:14mm;right:14mm;font-size:7.6pt;color:#6d6560;display:flex;justify-content:space-between;border-top:1px solid #d9cfbf;padding-top:4px}
+h1{font-size:27pt;line-height:1.05;margin:2px 0 4px;color:#2b2a6b;font-weight:700}
+h2{font-size:14.5pt;margin:10px 0 5px;color:#b3261e;font-weight:700}
+h3{font-size:11.2pt;margin:8px 0 3px;color:#2b2a6b;font-weight:700}
+p{margin:3px 0 5px}
+ul{margin:2px 0 6px;padding-left:16px} li{margin:1.5px 0}
+.sub{font-family:Lora,serif;font-style:italic;font-size:11.5pt;color:#4a4458}
+.box{border-radius:10px;padding:8px 11px;margin:7px 0}
+.myth{background:#fde7e4;border:1.5px solid #e2766b}
+.fact{background:#e5f4e7;border:1.5px solid #6db37a}
+.info{background:#e8ecfb;border:1.5px solid #7d8bd6}
+.warn{background:#fff3d6;border:1.5px solid #e0a52a}
+.exam{background:#f1e6fb;border:1.5px dashed #8b5cc4}
+.tag{display:inline-block;font-size:7.8pt;font-weight:700;letter-spacing:.06em;color:#fff;background:#8b5cc4;border-radius:4px;padding:1px 6px;margin-right:5px;vertical-align:middle}
+.tag.r{background:#b3261e}.tag.g{background:#2f8f46}.tag.b{background:#2b2a6b}.tag.o{background:#c27c0e}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fig{text-align:center;margin:6px 0}
+.fig img{max-width:100%;border-radius:8px;border:1px solid #d9cfbf}
+.cap{font-size:8pt;color:#6d6560;margin-top:2px}
+table{border-collapse:collapse;width:100%;font-size:9.2pt;margin:5px 0}
+th,td{border:1px solid #cbbfa9;padding:4px 6px;text-align:left;vertical-align:top}
+th{background:#2b2a6b;color:#fff;font-weight:700}
+tr:nth-child(even) td{background:#f4eee2}
+.big{font-size:12pt;font-weight:700}
+.step{display:flex;gap:9px;align-items:flex-start;margin:6px 0}
+.n{flex:0 0 26px;height:26px;border-radius:50%;background:#2f8f46;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.red .n{background:#b3261e}
+.kv b{color:#2b2a6b}
+.small{font-size:8.6pt;color:#4a4458}
+</style></head><body>
+
+<!-- PAGE 1 -->
+<div class="page">
