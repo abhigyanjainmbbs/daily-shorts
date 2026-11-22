@@ -1,13 +1,1 @@
-[in#1 @ 0x6137cb4f3640] Error opening input: No such file or directory
-Error opening input file /home/runner/work/daily-shorts/daily-shorts/assets/outro.mp4.
-Error opening input files: No such file or directory
-Traceback (most recent call last):
-  File "/home/runner/work/daily-shorts/daily-shorts/engine/pipeline.py", line 75, in <module>
-    main()
-  File "/home/runner/work/daily-shorts/daily-shorts/engine/pipeline.py", line 62, in main
-    render.render(sp, vdir, mp4)
-  File "/home/runner/work/daily-shorts/daily-shorts/engine/render.py", line 249, in render
-    subprocess.run(cmd, check=True)
-  File "/opt/hostedtoolcache/Python/3.11.18/x64/lib/python3.11/subprocess.py", line 571, in run
-    raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '['ffmpeg', '-v', 'error', '-y', '-i', '/home/runner/work/daily-shorts/daily-shorts/out/_body.mp4', '-i', '/home/runner/work/daily-shorts/daily-shorts/assets/outro.mp4', '-i', '/home/runner/work/daily-shorts/daily-shorts/out/_mix.wav', '-filter_complex', '[0:v]fps=30,format=yuv420p[a];[1:v]scale=1080:1920,fps=30,format=yuv420p[b];[a][b]concat=n=2:v=1:a=0[v];[2:a]loudnorm=I=-14:TP=-1.5:LRA=11[au]', '-map', '[v]', '-map', '[au]', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '24', '-maxrate', '9M', '-bufsize', '18M', '-c:a', 'aac', '-b:a', '160k', '-ar', '44100', '-movflags', '+faststart', '-shortest', '/home/runner/work/daily-shorts/daily-shorts/out/2026-11-21-tetanus.mp4']' returned non-zero exit status 254.
+rendered /home/runner/work/daily-shorts/daily-shorts/out/2026-11-21-tetanus.mp4
