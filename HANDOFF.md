@@ -1,17 +1,21 @@
-# Handoff — daily-shorts (state at 21 Nov 2026, ~17:15 IST)
+# Handoff — daily-shorts (state at 22 Nov 2026, ~16:20 IST)
 
-## Status: Tetanus short is DONE and SCHEDULED for 21 Nov, 7:30 PM IST
+## Latest: Naphthalene balls short — SCHEDULED for 22 Nov, 7:30 PM IST
 | Platform | Where | Notes |
 |---|---|---|
-| YouTube Shorts | https://youtube.com/shorts/UkF09dCCCFI | custom cover, tags, altered-content = Yes, Not made for kids |
+| YouTube Shorts | https://youtu.be/TX5L3qZtolk | custom cover, tags, altered-content = Yes, Not made for kids |
 | Facebook Reel | Business Suite → Content → Scheduled | caption + cover; never click Boost |
 | Instagram Reel | Business Suite → Content → Scheduled (@abhigyanjainmbbs) | same caption + cover |
-| LinkedIn | linkedin.com → Start a post → clock icon → Scheduled | English caption + notes link |
+| LinkedIn | linkedin.com → clock icon → Scheduled | English caption + notes link + cover |
 
-- **Comment-to-DM:** Business Suite → Inbox → Automations → "Comment to message - Tetanus free notes DM" (ON, Messenger + Instagram). Keyword TETANUS → sends the 6-page notes PDF link. Meta may delay the DM ~15 min and skips it if he replies first.
-- **Notes PDF (6 pages):** `notes/Tetanus_Notes_AbhigyanJainMBBS.pdf` (source in `notes/src/`).
-  - Public: https://github.com/abhigyanjainmbbs/daily-shorts/blob/main/notes/Tetanus_Notes_AbhigyanJainMBBS.pdf
-- **Final video:** `media/2026-11-21-tetanus/Tetanus_FINAL.mp4` (2:46.9), cover `cover_1080x1920.jpg`. Laptop copies in `Downloads/ABHIGYAN JAIN SHORTS/Tetanus/`.
+- **Comment-to-DM:** Business Suite → Inbox → Automations → "Comment to message - Naphthalene free notes DM" (ON, Messenger + Instagram). Keywords: NAPHTHALENE / Naphthalene / naphthalene + 3 "napthalene" misspellings (keywords are case-sensitive, so each case is a separate keyword; max 10). Meta may delay the DM ~15 min and skips it if he replies first.
+- **Notes PDF (6 pages):** `notes/Naphthalene_Notes_AbhigyanJainMBBS.pdf` (source `notes/naph/notes.html`).
+- **Final video:** `media/2026-11-22-naphthalene/Naphthalene_FINAL.mp4` (3:02), cover `cover_1080x1920.jpg`.
+- Mix: `scripts/cues/2026-11-22-naphthalene.json`, gap-to-speech −14.5 dB (the balance he approved).
+
+## Previous: Tetanus short (21 Nov) — live
+- https://youtube.com/shorts/UkF09dCCCFI · notes `notes/Tetanus_Notes_AbhigyanJainMBBS.pdf`
+- "Comment to message - Tetanus free notes DM" automation still ON (keyword TETANUS).
 
 ## How this video was made (repeat for the next topic)
 1. **Script** → `scripts/queue/<id>.json`: scenes with `vo`, `kw` keyword lists, `visual` = comp spec (+ `visual_fallback`). Flags `captions:false`, `film:true`.
@@ -27,6 +31,13 @@
 5. **Mix:** kit `audio_tools/mix.py` + cues JSON (`scripts/cues/<id>.v3.json` is the approved one).
    - Music beds about −26 dB, duck 7 dB, SFX −3 dB, loudnorm −14 LUFS. The voice must stay clearly on top: he said v2 music was too loud.
 6. **Watermark:** Poppins Bold 38, alpha 80, y=1530 (he asked for bold + faint, not overlapping text).
+
+## Gotchas learned on 22 Nov
+- **GitHub rejects files over 100 MB.** Re-encode the final with `-b:v 3850k -maxrate 5M -bufsize 10M -preset fast` → ~90 MB for 3 minutes, quality still good.
+- **ChatGPT tabs: wait for each image before sending the next prompt in that tab.** Sending prompt N+1 too soon cancels image N.
+- **Chrome allows only one automatic download per tab.** Open a fresh tab per image: navigate to the conversation URL, screenshot to activate, then fetch the blob and click an `<a download>`. If the filename already exists Windows saves it as `name (1).png`.
+- **Meta keyword field is a combobox:** type the keyword, then click the suggestion row below it. Commas and Enter do not create chips.
+- **LinkedIn/Meta rich editors:** click the element by its `find` ref (coordinates often miss), then dispatch a synthetic `paste` ClipboardEvent.
 
 ## Uploading big files from the browser (works on YouTube, Meta, LinkedIn)
 - Push the mp4 to this public repo; raw.githubusercontent.com allows CORS.
