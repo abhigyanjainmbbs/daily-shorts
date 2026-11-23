@@ -62,3 +62,34 @@
 - Disclaimer in every video: on screen, spoken, and in the description.
 - Tick AI/altered-content where offered. Never click Boost.
 - Watermark: @abhigyanjainmbbs.
+
+---
+
+## 23 Nov 2026 — Sudden cardiac arrest short
+
+**Published:** YouTube Shorts (youtube.com/shorts/LmQGygFLJ5w), Facebook Reel, LinkedIn — all scheduled 23 Nov 21:30 IST.
+**Instagram: BLOCKED.** His IG account is sitting on `instagram.com/accounts/suspended/` with a "Confirm that you're human" challenge. Do NOT attempt to complete it — it is bot detection, and solving it on his behalf risks a harder action on the account. It must be done by him. This is also why Instagram has unlinked itself from Meta Business Suite ("Connect Instagram" shows in the Post-to dropdown).
+
+### Gotchas learned on 23 Nov
+
+1. **`sfx_tap.mp3` in /home/claude/kit/snd/ is 92 SECONDS of rain ambience, not a tap one-shot.** Used in a cues JSON with no `dur`, it plays from its `at` to the end of the video. This put a constant rain hiss under the whole 22 Nov and 23 Nov videos (he noticed and complained twice). ALWAYS set an explicit `dur` on every sfx entry, or check the file length first:
+   `ffprobe -v error -show_entries format=duration -of csv=p=0 <file>`
+   File lengths: boom 2.1s, boom2 4.1s, riser 4.0s, riser2 12.0s, heartbeat 6.8s, **tap 92.6s**.
+   To detect a rain-like bed numerically: spectral flatness > 0.1 AND envelope coefficient-of-variation < 0.3 means steady broadband noise. `sfx_tap` measures flatness 0.67, hf-ratio 0.57.
+2. **Removing a loud bed changes the mix balance.** After dropping sfx_tap, gap-to-speech fell to −17.6 dB; music had to come back up ~4 dB to reach his approved −14.5 dB.
+3. **ElevenLabs says "hain" not "haan" for "Ek bhi haan?"** — the grammar pulls it that way, and writing हाँ in Devanagari does NOT fix it. The fix is to reword so "haan" can only mean yes: "Ek bhi? Agar haan — do test". He reverted this one, so the shipped version still says "hain".
+4. **Chrome allows only the FIRST automatic (non-user-gesture) download per tab.** For a 2nd ElevenLabs take, open a brand-new tab, regenerate there, and download from that tab. `window.open` from injected JS is popup-blocked and does not work around it.
+5. **postMessage of a Blob can arrive late** and a second message with a different shape will clobber the first. Transfer as an ArrayBuffer with a dedicated `buf` field and a listener that only accepts `buf`, then verify `.size` before using.
+6. **LinkedIn: write the caption BEFORE attaching the video.** The video is an inline node in the ProseMirror editor, so `document.execCommand('selectAll'); delete` on the caption deletes the attached video too, and leaves the text mangled. Paste the caption once into the empty box (synthetic `paste` with `text/plain` only — newlines become paragraphs correctly), then click the media button.
+7. **YouTube Studio send button aria-label changed** — the composer's submit is now `form button[aria-label="Send"]` on ChatGPT, and YouTube's tag input needs an Enter keydown + blur to commit chips.
+8. **YouTube audience data (23 Nov):** 95.1% India, 79.9% mobile, 25–34 = 34.3%, 35–44 = 34.0%, 18–24 = 18.0%, **99.8% non-subscribers**. "When your viewers are on YouTube" says *not enough data*. Chose 21:30 IST over the old 19:30 on that profile.
+
+### Engine changes
+- `engine/render.py`: `no_disclaimer: true` in a script JSON now suppresses the on-screen disclaimer sprite.
+- For sub-30s shorts, call `composer()` directly and encode the body yourself — `render()` appends a ~10s outro. See `scripts/queue/renderbody.py`.
+- Hook built outside the engine by `scripts/queue/hook.py`, which imports `engine/gfx.py` so keyword styling matches exactly.
+
+### Standing rules added
+- Disclaimer ("Educational content only, not medical advice") goes in the video DESCRIPTION ONLY — never spoken, never on screen.
+- No name/outro end card on videos under 30 seconds.
+- Nothing in the video that costs retention: no intro card, no outro, fast cuts, strong BGM/VFX.
