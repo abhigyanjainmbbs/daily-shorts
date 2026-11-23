@@ -1,0 +1,327 @@
+{
+ "id": "2026-11-23-scd",
+ "palette": "navy",
+ "captions": false,
+ "film": true,
+ "no_disclaimer": true,
+ "scenes": [
+  {
+   "vo": "Teen sau mein se ek jawan ke dil mein chhupi bimari hai.",
+   "bg": "navy",
+   "kw": [
+    [
+     "TEEN SAU MEIN SE",
+     "EK JAWAN",
+     "yellow",
+     0.0
+    ],
+    [
+     "DIL MEIN",
+     "CHHUPI BIMARI",
+     "red",
+     0.55
+    ]
+   ],
+   "sfx": "riser",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "crowd_young",
+     "zoom": [
+      1.0,
+      1.14
+     ],
+     "dark": 0.1
+    },
+    "fx": [
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 980,
+      "r": 300,
+      "col": [
+       255,
+       210,
+       110
+      ]
+     },
+     {
+      "type": "flash",
+      "t": 0.55,
+      "d": 0.14,
+      "col": [
+       255,
+       80,
+       70
+      ]
+     },
+     {
+      "type": "particles",
+      "col": [
+       255,
+       220,
+       160
+      ],
+      "n": 18
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "1 in 300",
+    "sub": "chhupi dil ki bimari"
+   }
+  },
+  {
+   "vo": "Wajah: hypertrophic cardiomyopathy.",
+   "bg": "crimson",
+   "kw": [
+    [
+     "WAJAH",
+     "HYPERTROPHIC",
+     "violet",
+     0.0
+    ],
+    [
+     "CARDIOMYOPATHY",
+     "MUSCLE BAHUT MOTI",
+     "red",
+     0.5
+    ]
+   ],
+   "sfx": "boom",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "heart_thick",
+     "zoom": [
+      1.16,
+      1.0
+     ]
+    },
+    "fx": [
+     {
+      "type": "heartbeat"
+     },
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1000,
+      "r": 320,
+      "col": [
+       255,
+       70,
+       60
+      ]
+     },
+     {
+      "type": "shake",
+      "t": 0.5,
+      "d": 0.3,
+      "amp": 10
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "HCM",
+    "sub": "dil ki muscle moti"
+   }
+  },
+  {
+   "vo": "Exercise ka adrenaline aate hi wiring short.",
+   "bg": "navy",
+   "kw": [
+    [
+     "ADRENALINE",
+     "WIRING SHORT",
+     "blue",
+     0.0
+    ],
+    [
+     "RHYTHM BIGDA",
+     "PUMP BAND",
+     "red",
+     0.52
+    ]
+   ],
+   "sfx": "boom2",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "heart_wiring",
+     "zoom": [
+      1.0,
+      1.18
+     ]
+    },
+    "fx": [
+     {
+      "type": "flash",
+      "t": 0.5,
+      "d": 0.2,
+      "col": [
+       120,
+       160,
+       255
+      ]
+     },
+     {
+      "type": "shake",
+      "t": 0.52,
+      "d": 0.45,
+      "amp": 18
+     },
+     {
+      "type": "particles",
+      "col": [
+       120,
+       180,
+       255
+      ],
+      "n": 30
+     },
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 980,
+      "r": 300,
+      "col": [
+       80,
+       130,
+       255
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Ventricular fibrillation",
+    "sub": "pump band"
+   }
+  },
+  {
+   "vo": "Warning do: exercise ke dauran behoshi, aur ghar mein pachaas se pehle achanak maut.",
+   "bg": "amber",
+   "kw": [
+    [
+     "WARNING 1",
+     "EXERCISE MEIN BEHOSHI",
+     "orange",
+     0.0
+    ],
+    [
+     "WARNING 2",
+     "50 SE PEHLE MAUT",
+     "red",
+     0.52
+    ]
+   ],
+   "sfx": "riser2",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "seq": [
+      [
+       "faint_gym",
+       0.0
+      ],
+      [
+       "family_frame",
+       0.54,
+       0,
+       0.06
+      ]
+     ],
+     "zoom": [
+      1.12,
+      1.0
+     ]
+    },
+    "fx": [
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 1050,
+      "r": 280,
+      "col": [
+       255,
+       180,
+       90
+      ]
+     },
+     {
+      "type": "flash",
+      "t": 0.52,
+      "d": 0.16,
+      "col": [
+       255,
+       120,
+       80
+      ]
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "Do warning",
+    "sub": "behoshi + family history"
+   }
+  },
+  {
+   "vo": "Ek bhi haan? Do test — ECG aur ECHO.",
+   "bg": "mint",
+   "kw": [
+    [
+     "EK BHI HAAN?",
+     "BAS DO TEST",
+     "green",
+     0.0
+    ],
+    [
+     "ECG",
+     "+ ECHO",
+     "green",
+     0.45
+    ]
+   ],
+   "sfx": "tap",
+   "visual": {
+    "type": "comp",
+    "bg": {
+     "img": "echo_test",
+     "zoom": [
+      1.0,
+      1.12
+     ]
+    },
+    "fx": [
+     {
+      "type": "glow",
+      "x": 540,
+      "y": 900,
+      "r": 320,
+      "col": [
+       160,
+       255,
+       210
+      ]
+     },
+     {
+      "type": "emoji",
+      "ch": "✅",
+      "size": 150,
+      "x": 860,
+      "y": 1300,
+      "t": 0.5
+     }
+    ]
+   },
+   "visual_fallback": {
+    "type": "title",
+    "title": "ECG + ECHO",
+    "sub": "bas do test"
+   }
+  }
+ ]
+}

@@ -158,7 +158,7 @@ def composer(script_path, audio_dir):
         sp_pal = sp.get('bg') or pal
         objs.append((s, S.make(sp, s['t1'] - s['t0'], sp_pal, i), SceneCaptions(sp.get('cap', '') if show_caps else '', s['vo0'], s['vo1'] + GAP * 0.5), sp_pal))
     wm, wox, woy, wtw, wth = text_sprite(CFG['watermark'], font('pop_b', 38), (255, 255, 255, 80), shadow=0.35, blur=4)
-    disc = disclaimer_sprite(CFG['disclaimer']) if CFG.get('disclaimer') else None
+    disc = disclaimer_sprite(CFG['disclaimer']) if (CFG.get('disclaimer') and not script.get('no_disclaimer')) else None
     def frame(fi):
         t = fi / FPS
         si = 0
