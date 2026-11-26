@@ -1,6 +1,10 @@
-scene 0: eleven_v3 -> /home/runner/work/daily-shorts/daily-shorts/voice/2026-11-23-scd/scene_00.mp3
-scene 1: eleven_v3 -> /home/runner/work/daily-shorts/daily-shorts/voice/2026-11-23-scd/scene_01.mp3
-scene 2: eleven_v3 -> /home/runner/work/daily-shorts/daily-shorts/voice/2026-11-23-scd/scene_02.mp3
-scene 3: eleven_v3 -> /home/runner/work/daily-shorts/daily-shorts/voice/2026-11-23-scd/scene_03.mp3
-scene 4: eleven_v3 -> /home/runner/work/daily-shorts/daily-shorts/voice/2026-11-23-scd/scene_04.mp3
-rendered /home/runner/work/daily-shorts/daily-shorts/out/2026-11-23-scd.mp4
+Traceback (most recent call last):
+  File "/home/runner/work/daily-shorts/daily-shorts/engine/pipeline.py", line 75, in <module>
+    main()
+  File "/home/runner/work/daily-shorts/daily-shorts/engine/pipeline.py", line 45, in main
+    sp = pick(args[0] if args else None)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/daily-shorts/daily-shorts/engine/pipeline.py", line 26, in pick
+    sid = json.load(open(p))['id']
+          ~~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'id'
